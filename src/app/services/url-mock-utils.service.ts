@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ServiceMapItem, AREAMOCK } from '@angular/cli';
+import { ServiceMapItem } from '../model/ServiceMapItem';
+import { LOGINMOCK } from '../mock/login.mock';
 
 @Injectable()
 export class UrlMockUtilsService {
@@ -15,7 +16,7 @@ export class UrlMockUtilsService {
   }
 
   serviceMap: {[key:string] : ServiceMapItem;} = {
-      registrationAreaService: {mock: AREAMOCK, url:'auth/get/areas'}
+      loginService: {mock: LOGINMOCK, url:'auth/login'}
   }
 
 }

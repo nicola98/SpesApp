@@ -12,7 +12,7 @@ export class LoginService {
       'Authorization': 'Basic ' + btoa("nicola : password")
     });
     this.genericService.callGet(
-      'auth/login', 
+      'loginService', 
       header, 
       (response)=>{
         if(callback)
