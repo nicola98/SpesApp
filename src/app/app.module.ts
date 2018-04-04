@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms'
 
 
 import { AppComponent } from './app.component';
@@ -12,7 +13,8 @@ import { SinglePageSiteComponent } from './components/single-page-site/single-pa
     SinglePageSiteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

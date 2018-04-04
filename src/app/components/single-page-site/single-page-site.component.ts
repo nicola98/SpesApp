@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-page-site.component.css']
 })
 export class SinglePageSiteComponent implements OnInit {
+  email: string;
+  contentReport: string;
 
   constructor() { }
 
