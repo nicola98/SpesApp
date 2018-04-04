@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SinglePageSiteComponent } from './components/single-page-site/single-page-site.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SinglePageSiteComponent
+    SinglePageSiteComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
