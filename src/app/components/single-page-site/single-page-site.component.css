@@ -1,5 +1,6 @@
-.scarica {
-    background-color: cyan;
+#scarica {
+    background-color: #59afe1;
+    padding-top: 150px;
 }
 
 textarea {
@@ -12,4 +13,9 @@ textarea {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0;
 }
