@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SinglePageSiteComponent } from './components/single-page-site/single-page-site.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SinglePageSiteComponent
   ],
   imports: [
     BrowserModule
