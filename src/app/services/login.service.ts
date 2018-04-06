@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
 import { GenericServiceService } from './generic-service.service';
 import { HttpHeaders} from '@angular/common/http';
+import { LoginUser } from '../model/data/LoginUser';
 
 @Injectable()
 export class LoginService {
 
   constructor(private genericService: GenericServiceService) { }
 
-  executeLogin(callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+  executeLogin(user: LoginUser, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+
+    
+
     let header = new HttpHeaders({
-      'Authorization': 'Basic ' + btoa("nicola : password")
+      'Authorization': 'Basic ' + btoa(user.username + ":" + user.password)
     });
     this.genericService.callGet(
       'loginService', 
@@ -21,7 +25,7 @@ export class LoginService {
       (error)=>{
         if(errorCallBack)
         errorCallBack(error)
-      });
+    });
   }
 
 }
