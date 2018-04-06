@@ -132,3 +132,33 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/* GENERAL
+
+lightBlue: #59afe1
+
+*/
+
+
+/* GLOBAL */
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Media Query */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
