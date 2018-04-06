@@ -1,6 +1,37 @@
 #scarica {
+    padding-top: 50px;
+    background-color: cyan;
+}
+
+#scarica .content {
+    background-image: url("../../../assets/img/BG_home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#scarica .contentTitle {
+    width: 300px;
+    margin: 20px 50px 0px 150px;
+    padding-top: 70px;
+}
+
+#scarica .contentText {
+    width: 380px;
+    margin: 20px 50px 0px 150px;
+}
+
+#scarica .content p {
+    font-size: 18px;
+}
+
+#scarica .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#scarica .footer {
     background-color: #59afe1;
-    padding-top: 150px;
 }
 
 textarea {
@@ -13,9 +44,4 @@ textarea {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-}
-
-h2 {
-    font-size: 20px;
-    margin: 20px 0;
 }
