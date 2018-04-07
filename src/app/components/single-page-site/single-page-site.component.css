@@ -1,18 +1,18 @@
 #scarica {
     padding-top: 50px;
-    background-color: cyan;
+    color: white;
 }
 
 #scarica .content {
     background-image: url("../../../assets/img/BG_home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 325px;
 }
 
 #scarica .contentTitle {
     width: 300px;
-    margin: 20px 50px 0px 150px;
+    margin: 0px 50px 0px 150px;
     padding-top: 70px;
 }
 
@@ -32,7 +32,42 @@
 
 #scarica .footer {
     background-color: #59afe1;
+    padding: 25px 0px;
 }
+
+#scarica .footer p {
+    width: 350px;
+    margin: 0px 50px 0px 150px;
+}
+
+#scarica .footer p img {
+    clear: left;
+    margin: 20px 20px 20px 0px
+}
+
+#scarica .footer img.phone {
+    margin-top: -409px;
+    margin-left: 700px;
+    position: absolute;
+}
+
+.half-circle {
+    width: 70px;
+    height: 35px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #59afe1;
+    border-top: 0;
+    position: absolute;
+    margin-left: 565px;
+}
+
+.half-circle img {
+    margin-left: 20.4px;
+}
+
+
+/*fine css scarica*/
 
 textarea {
     width: 100%;
