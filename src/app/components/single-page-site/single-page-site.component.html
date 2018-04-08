@@ -1,6 +1,7 @@
-<!--Scarica-->
-<section id="scarica">
-    <div class="container">
+<div class="container">
+    <!--Scarica-->
+    <section id="Scarica">
+
         <div class="content">
             <h1 class="contentTitle">IL NUOVO MODO DI FAR SPESA!</h1>
 
@@ -19,49 +20,89 @@
         <div class="half-circle">
             <img src="../../../assets/img/arrow_white.png" alt="">
         </div>
-    </div>
-</section>
 
-<!--Funzionalià-->
-<!-- <div>
-    <h3>Scopri le funzionalità fai la spesa senza pensieri!</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sint, quos voluptatem voluptatibus nihil
-        <div>
+    </section>
 
-            <div>
-                <img src="" alt="">
-                <p>Compri sempre gli stessi articoli oppure aggiungi sempre nuovi prodotti?</p>
+    <!--Funzionalià-->
+
+    <section id="Funzionalita">
+
+
+        <div class="contentTitle">
+            <h3>Scopri le funzionalità fai la spesa senza pensieri!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla sint, quos voluptatem voluptatibus nihil</p>
+        </div>
+
+        <div class="contentInstruction">
+
+            <div class="cardL">
+                <div class="numberCircle">1</div>
+                <div class="contentRight">
+                    <h3>Crea e salva le tue liste</h3><br>
+                    <img src="../../../assets/img/home_liste.png" alt="">
+                    <p>Compri sempre gli stessi articoli oppure aggiungi sempre nuovi prodotti?</p>
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="">
-                <p>Cosa devi preparare per cena? Torta al cioccolato o light?</p>
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <p>Invia le liste della spesa a chi vuoi e ricevi liste dai tuoi contatti!</p>
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <p>Controlla tutto prima di andare a cassa</p>
+            <div class="cardR">
+                <div class="numberCircle">2</div>
+                <div class="contentRight">
+                    <h3>Aggiungi gli ingredienti delle tue ricette</h3>
+                    <img src="../../../assets/img/home_ricette.png" alt="">
+                    <p>Cosa devi preparare per cena? Torta al cioccolato o light?</p>
+                </div>
             </div>
 
         </div>
-</div> -->
 
-<!--Contatti-->
-<!-- <div>
-    <h4>Vuoi scriverci un messaggio?</h4>
-    <p>Il parere dei nostri utenti è molto importatnte per noi! Se desideri segnalarci problemi o consigliarci qualcosa non esitare a scriverci!</p>
+        <div class="contentInstruction2">
 
-    <form>
-        <input type="text" placeholder="inserisci e-mail" id="email" [(ngModel)]="email">
+            <div class="cardL">
+                <div class="numberCircleRight">3</div>
+                <div class="contentLeft">
+                    <h3>Invia liste ai tuoi amici</h3>
+                    <img src="../../../assets/img/home_share.png" alt="">
+                    <p>Invia le liste della spesa a chi vuoi e ricevi liste dai tuoi contatti!</p>
+                </div>
+            </div>
 
-        <textarea placeholder="Scrivi il tuo messaggio" name="contentRep" id="" cols="30" rows="10" [(ngModel)]="contentReport"></textarea>
+            <div class="cardR">
+                <div class="numberCircleRight">4</div>
+                <div class="contentLeft">
+                    <h3>Aggiungi e spunta gli articoli</h3>
+                    <img src="../../../assets/img/home_cart.png" alt="">
+                    <p>Controlla tutto prima di andare in cassa</p>
+                </div>
+            </div>
 
-        <button type="submit">INVIA MESSAGGIO</button>
+        </div>
 
-    </form>
-</div> -->
+        <div class="half-circle2">
+            <img src="../../../assets/img/arrow_blue.png" alt="">
+        </div>
+
+
+    </section>
+
+    <!--Contatti-->
+    <section id="Contatti">
+        <div class="contentTitle">
+            <h4>Vuoi scriverci un messaggio?</h4>
+            <p>Il parere dei nostri utenti è molto importatnte per noi! <br>Se desideri segnalarci problemi o consigliarci qualcosa non esitare a scriverci!</p>
+        </div>
+
+        <form id="report">
+            <input type="text" placeholder="inserisci e-mail" id="email" [(ngModel)]="email">
+
+            <textarea placeholder="Scrivi il tuo messaggio" name="contentRep" id="" cols="30" rows="10" [(ngModel)]="contentReport"></textarea>
+
+            <input type="submit" value="INVIA MESSAGGIO">
+
+        </form>
+
+        <a class="toTop" href="#Scarica"><img src="../../../assets/img/backtotop.png" alt=""></a>
+
+    </section>
+
+
+</div>
