@@ -17,11 +17,10 @@ li {
 }
 
 .right a {
-    padding: 20px 25px;
+    padding: 20px;
     color: #555;
     font-size: 16px;
     line-height: 75px;
-    border-bottom: 3px solid transparent;
 }
 
 .right button {
@@ -29,18 +28,21 @@ li {
     font-size: 16px;
     border: 0;
     padding: 20px;
-    background: #fff;
-    border-bottom: 3px solid transparent;
+    background: transparent;
 }
 
 .right a:hover {
-    color: #0b5681;
-    border-bottom: 3px solid #0b5681;
+    background-color: #59afe1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
 }
 
 .right button:hover {
-    color: #0b5681;
-    border-bottom: 3px solid #0b5681;
+    background-color: #59afe1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
 }
 
 .logo {
@@ -57,14 +59,13 @@ li {
 .accedi {
     background-color: #59afe1 !important;
     border-radius: 20px;
-    padding: 10px 25px !important;
+    padding: 10px 20px !important;
     color: #fff !important;
-    margin: 0 20px 0 15px;
+    margin: 0 20px 0 20px;
 }
 
 .accedi:hover {
     transform: scale(1.06);
-    border-bottom: 3px solid transparent !important;
 }
 
 .right {
