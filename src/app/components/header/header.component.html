@@ -1,11 +1,9 @@
 <div id="navbar">
     <div class="container">
         <nav>
-
             <div class="logo">
                 <a href=""><img src="../../../assets/img/logo.png" alt=""></a>
             </div>
-
             <ul class="right">
                 <li>
                     <a href="#">Scarica</a>
@@ -17,14 +15,12 @@
                     <a href="#">Contatti</a>
                 </li>
                 <li>
-                    <button tabindex="-1">Registrati</button>
+                    <button (click)="signUpopenDialog()">Registrati</button>
                 </li>
                 <li>
-                    <button class="accedi" tabindex="-1">Accedi</button>
+                    <button (click)="signInopenDialog()" class="accedi">Accedi</button>
                 </li>
-
             </ul>
-
         </nav>
     </div>
 </div>
