@@ -13,30 +13,34 @@ li {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
 }
 
-#navbar a {
+.right a {
     padding: 20px 25px;
-    color: #000;
+    color: #555;
     font-size: 16px;
     line-height: 75px;
+    border-bottom: 3px solid transparent;
 }
 
-#navbar button {
-    color: #000;
+.right button {
+    color: #555;
     font-size: 16px;
     border: 0;
-    padding: 25px;
+    padding: 20px;
     background: #fff;
+    border-bottom: 3px solid transparent;
 }
 
-#navbar a:hover {
-    opacity: 0.75;
+.right a:hover {
+    color: #0b5681;
+    border-bottom: 3px solid #0b5681;
 }
 
-#navbar button:hover {
-    opacity: 0.75;
+.right button:hover {
+    color: #0b5681;
+    border-bottom: 3px solid #0b5681;
 }
 
 .logo {
@@ -47,7 +51,7 @@ li {
 .logo img {
     height: 50px;
     float: left;
-    margin: 5px 0;
+    margin: 8px 20px;
 }
 
 .accedi {
@@ -55,6 +59,12 @@ li {
     border-radius: 20px;
     padding: 10px 25px !important;
     color: #fff !important;
+    margin: 0 20px 0 15px;
+}
+
+.accedi:hover {
+    transform: scale(1.06);
+    border-bottom: 3px solid transparent !important;
 }
 
 .right {

@@ -1,3 +1,249 @@
-.prova {
-    padding-top: 300px;
+#Scarica {
+    padding-top: 50px;
+    color: white;
+}
+
+#Scarica .content {
+    background-image: url("../../../assets/img/BG_home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 325px;
+}
+
+#Scarica .contentTitle {
+    width: 300px;
+    margin: 0px 50px 0px 150px;
+    padding-top: 70px;
+}
+
+#Scarica .contentText {
+    width: 380px;
+    margin: 20px 50px 0px 150px;
+}
+
+#Scarica .content p {
+    font-size: 18px;
+}
+
+#Scarica .content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#Scarica .footer {
+    background-color: #59afe1;
+    padding: 25px 0px;
+}
+
+#Scarica .footer p {
+    width: 350px;
+    margin: 0px 50px 0px 150px;
+}
+
+#Scarica .footer p img {
+    clear: left;
+    margin: 20px 20px 20px 0px
+}
+
+#Scarica .footer img.phone {
+    margin-top: -409px;
+    margin-left: 700px;
+    position: absolute;
+}
+
+
+/* .half-circle {
+    width: 75px;
+    height: 35px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #59afe1;
+    border-top: 0;
+    position: absolute;
+    margin-left: 565px;
+} */
+
+.half-circle {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.half-circle img {
+    margin: 0px auto;
+    display: block;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #59afe1;
+    padding: 0 30px 30px 30px;
+}
+
+
+/*fine css scarica*/
+
+#Funzionalita {
+    color: #515C7A;
+}
+
+#Funzionalita .contentTitle {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#Funzionalita .contentTitle h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#Funzionalita .contentInstruction {
+    margin: 30px auto;
+    width: 900px;
+}
+
+#Funzionalita .contentInstruction2 {
+    margin: 30px auto;
+    width: 900px;
+}
+
+.cardR {
+    width: 445px;
+    display: inline-block;
+}
+
+.cardL {
+    width: 445px;
+    display: inline-block;
+}
+
+.contentRight {
+    text-align: right;
+}
+
+.contentLeft {
+    width: 250px;
+}
+
+.contentInstruction .cardR .contentRight {
+    margin-left: 205px;
+}
+
+.contentInstruction .cardL .contentRight {
+    margin-right: 100px;
+}
+
+.contentInstruction2 .cardR .contentLeft {
+    margin-left: 100px;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    background: #59afe1;
+    color: white;
+    text-align: center;
+    font: 24px Arial, sans-serif;
+}
+
+.numberCircleRight {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    margin-left: 401px;
+    background: #59afe1;
+    color: white;
+    text-align: center;
+    font: 24px Arial, sans-serif;
+}
+
+.contentInstruction2 .cardL .numberCircleRight {
+    margin-left: 301px;
+}
+
+.contentInstruction .cardR .numberCircle {
+    margin-left: 100px;
+}
+
+.half-circle2 {
+    margin: 0px auto;
+    display: block;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: white;
+    padding: 0 30px 30px 30px;
+}
+
+.half-circle2 img {
+    margin: 0px auto;
+    display: block;
+}
+
+
+/* fine css funzionalità*/
+
+#Contatti {
+    padding-top: 50px;
+    background-color: #59afe1;
+    color: white;
+}
+
+#Contatti .contentTitle {
+    text-align: center;
+}
+
+#Contatti .contentTitle h4 {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 800px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+input[type=text] {
+    width: 800px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+
+input[type=submit] {
+    background-color: #515C7A;
+    width: 800px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.center {
+    margin: auto;
+}
+
+#report {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.toTop {
+    cursor: pointer;
+    margin-left: 1100px;
+    margin-top: -30px;
+    position: absolute;
 }
