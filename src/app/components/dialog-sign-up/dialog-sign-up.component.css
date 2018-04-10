@@ -26,6 +26,7 @@ button:hover {
 .signup_button {
     background-color: #59afe1;
     color: #fff;
+    font-size: 16px;
 }
 
 .form-group {
