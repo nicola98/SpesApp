@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { DialogSignUpComponent } from './components/dialog-sign-up/dialog-sign-up.component';
 import { DialogSignInComponent } from './components/dialog-sign-in/dialog-sign-in.component';
 import { ItemService } from './services/item.service';
+import { ListItemService } from './services/list-item.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { ItemService } from './services/item.service';
     BrowserAnimationsModule,
     MatDialogModule
   ],
-  providers: [ItemService],
+  providers: [ItemService, ListItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
