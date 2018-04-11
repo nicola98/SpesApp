@@ -6,6 +6,8 @@ import { Item } from '../entities/item';
 @Injectable()
 export class ListItemService {
 
+private list: ListItem;
+
   private lists = [
     new ListItem("", "frutta", "refill di frutti per macedonia"),
     new ListItem("", "carne", "cibo per il babercue di domenica"),
@@ -18,6 +20,21 @@ export class ListItemService {
 
   getListsItem(){
     return this.lists;
+  }
+
+  newListItem(img : string ="", name : string ="", description : string =""){
+    this.list = new ListItem(img, name, description);
+    return this.lists.push(this.list);
+  }
+
+  removeListItem(name: String){
+    this.list = this.getListItemByName(name);
+    
+      const index: number = this.lists.indexOf(this.list);
+      if (index !== -1) {
+        this.lists.splice(index, 1);
+      }      
+    
   }
 
   addItems(list: ListItem, items: Item[]){
