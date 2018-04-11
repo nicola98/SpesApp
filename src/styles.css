@@ -1,3 +1,5 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
 /* RESET CSS */
 
 html,
@@ -145,20 +147,37 @@ lightBlue: #59afe1
 
 body {
     font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.container {
+section {
+    padding: 70px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+} */
+
+.mat-dialog-container {
+    padding: 0px !important;
 }
 
 
 /* Media Query */
 
+
+/* 
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
     }
-}
+} */

@@ -16,27 +16,33 @@ li {
     z-index: 999;
 }
 
-#navbar a {
-    padding: 20px 25px;
-    color: #000;
+.right a {
+    padding: 20px;
+    color: #555;
     font-size: 16px;
     line-height: 75px;
 }
 
-#navbar button {
-    color: #000;
+.right button {
+    color: #555;
     font-size: 16px;
     border: 0;
-    padding: 25px;
-    background: #fff;
+    padding: 20px;
+    background: transparent;
 }
 
-#navbar a:hover {
-    opacity: 0.75;
+.right a:hover {
+    background-color: #59afe1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
 }
 
-#navbar button:hover {
-    opacity: 0.75;
+.right button:hover {
+    background-color: #59afe1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
 }
 
 .logo {
@@ -47,14 +53,19 @@ li {
 .logo img {
     height: 50px;
     float: left;
-    margin: 5px 0;
+    margin: 8px 20px;
 }
 
 .accedi {
     background-color: #59afe1 !important;
     border-radius: 20px;
-    padding: 10px 25px !important;
+    padding: 10px 20px !important;
     color: #fff !important;
+    margin: 0 20px 0 20px;
+}
+
+.accedi:hover {
+    transform: scale(1.06);
 }
 
 .right {
