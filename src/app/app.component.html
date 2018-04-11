@@ -1,3 +1,4 @@
 <app-header></app-header>
-<single-page-site></single-page-site>
+<single-page-site *ngIf="isLogged"></single-page-site>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
