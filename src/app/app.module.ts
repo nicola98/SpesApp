@@ -11,6 +11,7 @@ import { SinglePageSiteComponent } from './components/single-page-site/single-pa
 import { HeaderComponent } from './components/header/header.component';
 import { DialogSignUpComponent } from './components/dialog-sign-up/dialog-sign-up.component';
 import { DialogSignInComponent } from './components/dialog-sign-in/dialog-sign-in.component';
+import { EditListComponent } from './components/edit-list/edit-list.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DialogSignInComponent } from './components/dialog-sign-in/dialog-sign-i
     SinglePageSiteComponent,
     HeaderComponent,
     DialogSignUpComponent,
-    DialogSignInComponent
+    DialogSignInComponent,
+    EditListComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
