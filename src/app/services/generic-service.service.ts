@@ -40,4 +40,26 @@ export class GenericServiceService {
     
   }
 
+  callPost(body: any, idUrl: string, header: HttpHeaders = null, callback = null, errorCallback = null){
+    if(this.utilityService.getUseMock())
+    {
+      this.http.post(this.urlMockService.getUrlService(idUrl), body, { headers: this.getAuthHeader(header), observe: 'response' }).subscribe(
+        response=>{
+          if(response.headers && response.headers.get("jwt")){
+            this.tkn = response.headers.get("jwt");
+          }
+          if(callback)
+            callback(response)
+        },
+        error=>{
+          if(errorCallback)
+            errorCallback(error)
+        }
+      )
+    }
+    else{
+      callback(this.urlMockService.getMock(idUrl));
+    }
+  }
+
 }

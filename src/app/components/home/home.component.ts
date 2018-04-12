@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserList } from '../../entities/user-list';
-import { UserListService } from '../../services/user-list.service';
-import { ListItem } from '../../entities/list-item';
+import { ListService } from '../../services/list.service';
+import { List } from '../../entities/List';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +9,11 @@ import { ListItem } from '../../entities/list-item';
 })
 export class HomeComponent implements OnInit {
 
-  private userLists: ListItem[];
-
-  constructor(private userListService: UserListService) { 
-    this.userLists = userListService.getUserList();
-  }
+  private list : List[];
+  constructor(private listService : ListService) { }
 
   ngOnInit() {
+    this.list=this.listService.returnList("1");
   }
 
 }

@@ -29,6 +29,8 @@ import { UserListService } from './services/user-list.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
+import { RegistratiService } from './services/registrati.service';
+import { CheckNameService } from './services/check-name.service';
 
 
 @NgModule({
@@ -67,7 +69,10 @@ import { AuthServiceService } from './services/auth-service.service';
               ListItemService, 
               UserListService,
               AuthLoginService,
-              AuthServiceService],
+              AuthServiceService,
+               RegistratiService, 
+               CheckNameService],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
