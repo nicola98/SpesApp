@@ -1,3 +1,16 @@
-<p>
-  list-detail works!
-</p>
+<section id="elenco-liste">
+    <div class="container">
+        <div class="wrap">
+            <div *ngFor="let item of list; let i=index">
+                <div>id: {{item.id}}</div>
+                <img src="{{item.image}}" alt="">
+                <div>name: {{item.name}}</div>
+                <div>dose: {{item.dose}}</div>
+                <div>quantity: {{item.dose}}</div>
+                <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt=""></div>
+                <div *ngIf="!item.gotIt"> <img src="../../../assets/img/wrong.jpg" alt=""></div>
+                <div *ngIf="i!=list.length-1">-------------------</div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,7 +1,15 @@
-<div id="fascia">
+<div *ngIf="listVuota" id="fascia">
     <div class="container">
         <div class="fascia-info">
             <p>Nessuna lista presente</p>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!listVuota" id="fascia">
+    <div class="container">
+        <div class="fascia-info">
+            <p>Elenco liste della spesa ({{list.length}})</p>
         </div>
     </div>
 </div>

@@ -32,6 +32,7 @@ import { ListService } from './services/list.service';
 import { HomeListeComponent } from './components/home-liste/home-liste.component';
 import { DialogAddListComponent } from './components/dialog-add-list/dialog-add-list.component';
 import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.component';
+import { ListItemService } from './services/list-item.service';
 
 
 @NgModule({
@@ -66,7 +67,7 @@ import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.com
     MainRouter
   ],
   providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService,
-     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService, ListService],
+     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService, ListService, ListItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
