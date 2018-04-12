@@ -26,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
+import { HomeListeComponent } from './components/home-liste/home-liste.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { AuthServiceService } from './services/auth-service.service';
     RicetteComponent,
     UserProfileComponent,
     ComponentNotFoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeListeComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
