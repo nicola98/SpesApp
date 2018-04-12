@@ -15,14 +15,13 @@ import { RegistratiService } from '../../services/registrati.service';
 export class DialogSignUpComponent implements OnInit {
   
   private user : User = new User ("so", "hg");
-  constructor(private registratiService : RegistratiService) { }
+  constructor(private registratiService : RegistratiService, private dialog: MatDialog) { }
 
   ngOnInit() {
   }
 
   accedi(){
     console.log("entri in accedi");
-    
    }
 
    registrati(){

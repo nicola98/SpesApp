@@ -37,6 +37,7 @@ export class DialogSignInComponent implements OnInit {
         this.mockUser = this.actualUser.split(",", 1);
         this.actualUserValue = this.mockUser[0].split(":", 1);
         console.log(this.actualUserValue[0]);*/
+        //sessionStorage.setItem("idUser", "1");
         this.router.navigate(['/home']);
         sessionStorage.setItem("logged", "true");
         this.checkNameService.nextUserName(this.actualUser);
