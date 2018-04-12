@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogSignUpComponent } from '../dialog-sign-up/dialog-sign-up.component';
 import { DialogSignInComponent } from '../dialog-sign-in/dialog-sign-in.component';
 import { Overlay } from '@angular/cdk/overlay';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ import { Overlay } from '@angular/cdk/overlay';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private router : Router) { }
 
   signUpopenDialog(){
     this.dialog.open(DialogSignUpComponent)

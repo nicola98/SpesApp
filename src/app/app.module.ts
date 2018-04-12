@@ -13,6 +13,19 @@ import { DialogSignUpComponent } from './components/dialog-sign-up/dialog-sign-u
 import { DialogSignInComponent } from './components/dialog-sign-in/dialog-sign-in.component';
 import { ItemService } from './services/item.service';
 import { ListItemService } from './services/list-item.service';
+import { HomeComponent } from './components/home/home.component';
+import { ListDetailComponent } from './components/list-detail/list-detail.component';
+import { RicetteComponent } from './components/ricette/ricette.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { ComponentNotFoundComponent } from './components/component-not-found/component-not-found.component';
+import { MainRouter } from './router/mainRouter';
+import { CheckLoginService } from './services/check-login.service';
+import { GenericServiceService } from './services/generic-service.service';
+import { LoginService } from './services/login.service';
+import { UrlMockUtilsService } from './services/url-mock-utils.service';
+import { UtilityService } from './services/utility.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UserListService } from './services/user-list.service';
 
 
 @NgModule({
@@ -22,7 +35,12 @@ import { ListItemService } from './services/list-item.service';
     SinglePageSiteComponent,
     HeaderComponent,
     DialogSignUpComponent,
-    DialogSignInComponent
+    DialogSignInComponent,
+    HomeComponent,
+    ListDetailComponent,
+    RicetteComponent,
+    UserProfileComponent,
+    ComponentNotFoundComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
@@ -32,9 +50,11 @@ import { ListItemService } from './services/list-item.service';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule,
+    MainRouter
   ],
-  providers: [ItemService, ListItemService],
+  providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService, UtilityService, ItemService, ListItemService, UserListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
