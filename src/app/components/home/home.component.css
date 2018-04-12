@@ -15,10 +15,45 @@
     height: 50px;
     bottom: 0px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
     top: -50px;
+    line-height: 50px;
     text-align: center;
     vertical-align: middle;
-    background-color: green;
-    line-height: 50px;
+    background-color: #59afe1;
+    color: white;
+    font-size: 20px;
+}
+
+.containerOption {
+    height: 50px;
+    bottom: 0px;
+    width: 300px;
+    visibility: hidden;
+    position: relative;
+    top: -100px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+}
+
+.containerOption img {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+}
+
+.list:hover .containerOption {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.list:hover .title {
+    background-color: black;
+    opacity: 0.8;
+    top: -252px;
+}
+
+.list:hover img {
+    opacity: 0.8;
 }
