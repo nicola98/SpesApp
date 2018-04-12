@@ -5,6 +5,7 @@ import { User } from '../../entities/User';
 import { Router } from '@angular/router';
 import { DialogSignInComponent } from '../dialog-sign-in/dialog-sign-in.component';
 import { MatDialog } from '@angular/material/dialog';
+import { RegistratiService } from '../../services/registrati.service';
 
 @Component({
   selector: 'app-dialog-sign-up',
@@ -12,21 +13,27 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./dialog-sign-up.component.css']
 })
 export class DialogSignUpComponent implements OnInit {
-
- 
-  private checkLoginService : CheckLoginService;
-  private router : Router;
   
-  
-  constructor(private dialog: MatDialog,  private loginService : LoginService) { }
+  private user : User = new User ("so", "hg");
+  constructor(private dialog: MatDialog, private registratiService : RegistratiService) { }
 
   ngOnInit() {
   }
 
   accedi(){
     console.log("entri in accedi");
-  
-    this.dialog._afterAllClosed(this.dialog.open(DialogSignInComponent));
+    
+   }
+
+   registrati(){
+    console.log("entri in registrati");
+     this.registratiService.executeRegistration(this.user,
+      (response) => {
+        console.log("success");
+        console.log(response);
+     }, (error) => {
+       console.log("error");
+     });
    }
 
 }

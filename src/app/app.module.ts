@@ -26,6 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
+import { RegistratiService } from './services/registrati.service';
+import { CheckNameService } from './services/check-name.service';
+import { ListService } from './services/list.service';
 import { HomeListeComponent } from './components/home-liste/home-liste.component';
 
 
@@ -57,7 +60,8 @@ import { HomeListeComponent } from './components/home-liste/home-liste.component
     HttpClientModule,
     MainRouter
   ],
-  providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService, UtilityService, AuthLoginService, AuthServiceService],
+  providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService,
+     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService, ListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
