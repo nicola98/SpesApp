@@ -7,30 +7,32 @@ import { UserList } from '../entities/user-list';
 export class UserListService {
 
   private list: ListItem;
-  private userList = new UserList();
+  private userFolder = new UserList();
+
+  private lists = [new ListItem("","frutta","")];
 
   constructor() { }
 
   getUserList(){
-    return this.userList.userList;
+    return this.lists;
   }
 
   newListItem(img : string ="", name : string ="", description : string =""){
     this.list = new ListItem(img, name, description);
-    return this.userList.userList.push(this.list);
+    return this.userFolder.userList.push(this.list);
   }
 
-  removeListItem(name: String){
+  removeListItem(name: String){  
     this.list = this.getListItemByName(name);
     
-      const index: number = this.userList.userList.indexOf(this.list);
+      const index: number = this.userFolder.userList.indexOf(this.list);
       if (index !== -1) {
-        this.userList.userList.splice(index, 1);
+        this.userFolder.userList.splice(index, 1);
       }      
   }
 
   getListItemByName(name: String){
-    for(let list of this.userList.userList){
+    for(let list of this.userFolder.userList){
       if(list.name == name)
       return list;
     }

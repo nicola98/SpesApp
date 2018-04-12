@@ -1,0 +1,24 @@
+.list {
+    width: 300px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 3px #888;
+    margin: 10px;
+    height: 250px;
+}
+
+.list img {
+    width: 300px;
+    height: 250px;
+}
+
+.title {
+    height: 50px;
+    bottom: 0px;
+    position: relative;
+    z-index: 100;
+    top: -50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: green;
+    line-height: 50px;
+}
