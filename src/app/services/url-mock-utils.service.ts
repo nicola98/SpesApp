@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ServiceMapItem } from '../model/ServiceMapItem';
 import { LOGINMOCK } from '../mock/login.mock';
+import { RegistratiService } from './registrati.service';
+import { REGISTRATIMOCK } from '../mock/registrati.mock';
 
 @Injectable()
 export class UrlMockUtilsService {
@@ -16,7 +18,8 @@ export class UrlMockUtilsService {
   }
 
   serviceMap: {[key:string] : ServiceMapItem;} = {
-      loginService: {mock: LOGINMOCK, url:'auth/login'}
+      loginService: {mock: LOGINMOCK, url:'auth/login'},
+      RegistratiService: {mock: REGISTRATIMOCK, url:'auth/registrati'}
   }
 
 }
