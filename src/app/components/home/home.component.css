@@ -1,6 +1,6 @@
 .list-btn {
     float: right;
-    margin-right: 95px;
+    margin-right: 40px;
     margin-top: -150px;
 }
 
@@ -17,6 +17,7 @@
 #fascia {
     border-bottom: 1px solid #E5E5E5;
     padding-top: 70px;
+    background-color: #FAFAFA;
 }
 
 .fascia-info {
