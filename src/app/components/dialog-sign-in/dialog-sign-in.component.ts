@@ -33,7 +33,7 @@ export class DialogSignInComponent implements OnInit {
        this.checkLoginService.nextLogged(true);
      }, (error) => {
        console.log("error");
-     }); 
-   }
+    }); 
+  }
 
 }
