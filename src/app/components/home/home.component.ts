@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ListService } from '../../services/list.service';
+import { List } from '../../entities/List';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private list : List[];
+  constructor(private listService : ListService) { }
 
   ngOnInit() {
+    this.list=this.listService.returnList("1");
   }
 
 }

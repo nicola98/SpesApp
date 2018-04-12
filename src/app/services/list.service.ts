@@ -7,9 +7,9 @@ export class ListService {
 
   constructor(private genericService: GenericServiceService) { }
 
-  returnList(username : string, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+  returnList(idUser : string, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
     let header = new HttpHeaders({
-      'Authorization': 'Basic ' + btoa(username)
+      'Authorization': 'Basic ' + btoa(idUser)
     });
     this.genericService.callGet(
       'returnList', 
