@@ -27,6 +27,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
 import { RegistratiService } from './services/registrati.service';
+import { CheckNameService } from './services/check-name.service';
 
 
 @NgModule({
@@ -57,7 +58,7 @@ import { RegistratiService } from './services/registrati.service';
     MainRouter
   ],
   providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService,
-     UtilityService, AuthLoginService, AuthServiceService, RegistratiService],
+     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

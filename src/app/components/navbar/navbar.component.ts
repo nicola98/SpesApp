@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CheckNameService } from '../../services/check-name.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  actUser : string;
+
+  constructor(private checkNameService : CheckNameService) {
+    console.log("newValue fuori");
+    this.checkNameService.nameUser$ .subscribe ((newValue: string) => {
+      console.log("newValue");
+      console.log(newValue);
+      console.log("newValue");
+      this.actUser = newValue;
+    });
+    console.log("newValue fuori");
+   }
 
   ngOnInit() {
   }
