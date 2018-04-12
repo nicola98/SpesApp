@@ -54,7 +54,14 @@ import { UserListService } from './services/user-list.service';
     HttpClientModule,
     MainRouter
   ],
-  providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService, UtilityService, ItemService, ListItemService, UserListService],
+  providers: [CheckLoginService, 
+              GenericServiceService, 
+              LoginService, 
+              UrlMockUtilsService, 
+              UtilityService, 
+              ItemService, 
+              ListItemService, 
+              UserListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
