@@ -1,0 +1,15 @@
+.list-btn {
+    float: right;
+    margin-right: 95px;
+    margin-top: -150px;
+}
+
+.list-btn button {
+    border: 0;
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 4px 3px 5px #a7a7a7;
+}

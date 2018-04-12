@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ListItemService } from '../../services/list-item.service';
 import { Item } from '../../entities/Item';
 import { ActivatedRoute } from '@angular/router';
+import { MatDialog } from '@angular/material';
+import { DialogAddItemComponent } from '../dialog-add-item/dialog-add-item.component';
 
 @Component({
   selector: 'app-list-detail',
@@ -13,7 +15,7 @@ export class ListDetailComponent implements OnInit {
   private list : Item [];
   private idList;
 
-  constructor(private listItemService : ListItemService, private router: ActivatedRoute,) {
+  constructor(private listItemService : ListItemService, private router: ActivatedRoute, private dialog: MatDialog) {
     this.router.params.subscribe(params=>{
       if(params['id'] != '' && params['id'] != null)
         this.idList=(params['id']);
@@ -30,6 +32,11 @@ export class ListDetailComponent implements OnInit {
      }, (error) => {
        console.log("error");
      });
+  }
+
+  addItem(){
+    console.log("yeeeeeeyeeeee");
+    this.dialog.open(DialogAddItemComponent)
   }
 
 }

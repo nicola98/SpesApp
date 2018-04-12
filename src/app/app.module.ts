@@ -33,6 +33,7 @@ import { HomeListeComponent } from './components/home-liste/home-liste.component
 import { DialogAddListComponent } from './components/dialog-add-list/dialog-add-list.component';
 import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.component';
 import { ListItemService } from './services/list-item.service';
+import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-item.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { ListItemService } from './services/list-item.service';
     NavbarComponent,
     HomeListeComponent,
     DialogAddListComponent,
-    ElencoListeComponent
+    ElencoListeComponent,
+    DialogAddItemComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
