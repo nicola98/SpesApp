@@ -7,14 +7,15 @@ import { ListDetailComponent } from "../components/list-detail/list-detail.compo
 import { RicetteComponent } from "../components/ricette/ricette.component";
 import { UserProfileComponent } from "../components/user-profile/user-profile.component";
 import { ComponentNotFoundComponent } from "../components/component-not-found/component-not-found.component";
-
+import { AuthLoginService } from "../services/auth-login.service";
+import { AuthServiceService } from "../services/auth-service.service";
 
 const appRoutes: Routes = [
-    { path: 'single-page-site', component: SinglePageSiteComponent},
-    { path: 'home', component: HomeComponent},
-    { path: 'detail-detail/:id', component: ListDetailComponent},
-    { path: 'ricette', component: RicetteComponent},
-    { path: 'user-profile', component: UserProfileComponent},
+    { path: 'single-page-site', component: SinglePageSiteComponent, canActivate: [AuthLoginService]},
+    { path: 'home', component: HomeComponent, canActivate: [AuthServiceService]},
+    { path: 'detail-detail/:id', component: ListDetailComponent, canActivate: [AuthServiceService]},
+    { path: 'ricette', component: RicetteComponent, canActivate: [AuthServiceService]},
+    { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthServiceService]},
     { path: '', redirectTo: '/single-page-site', pathMatch: 'full'},
     { path: '**', component: ComponentNotFoundComponent }
   ];

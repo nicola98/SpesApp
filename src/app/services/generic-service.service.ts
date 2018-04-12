@@ -21,7 +21,7 @@ export class GenericServiceService {
   }
 
   callGet(idUrl: string, header: HttpHeaders =null, callback =null, errorCallback = null){
-    if(!this.utilityService.getUseMock())
+    if(this.utilityService.getUseMock())
     {
       this.http.get(this.urlMockService.getUrlService(idUrl), { headers: this.getAuthHeader(header), observe: 'response' }).subscribe(
         response=>{

@@ -13,7 +13,8 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 })
 export class DialogSignInComponent implements OnInit {
  
-  constructor(private router : Router, private checkLoginService : CheckLoginService){
+  private user : User = new User("email", "password");
+  constructor(private router : Router, private checkLoginService : CheckLoginService, private loginService : LoginService){
 
   }
 
@@ -24,18 +25,15 @@ export class DialogSignInComponent implements OnInit {
 
   accedi2(){
     console.log("entri in accedi");
-    this.checkLoginService.nextLogged(false);
-    this.router.navigate(['/home']);
-    //this.router.navigate(['/home'])
-   /*  this.loginService.executeLogin(this.user,
+     this.loginService.executeLogin(this.user,
       (response) => {
         console.log("success");
+        this.router.navigate(['/home']);
        sessionStorage.setItem("logged", "true");
        this.checkLoginService.nextLogged(true);
-      
      }, (error) => {
        console.log("error");
-     }); */
+     }); 
    }
 
 }

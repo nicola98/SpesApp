@@ -26,6 +26,9 @@ import { UrlMockUtilsService } from './services/url-mock-utils.service';
 import { UtilityService } from './services/utility.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UserListService } from './services/user-list.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AuthLoginService } from './services/auth-login.service';
+import { AuthServiceService } from './services/auth-service.service';
 
 
 @NgModule({
@@ -40,7 +43,8 @@ import { UserListService } from './services/user-list.service';
     ListDetailComponent,
     RicetteComponent,
     UserProfileComponent,
-    ComponentNotFoundComponent
+    ComponentNotFoundComponent,
+    NavbarComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
@@ -61,7 +65,9 @@ import { UserListService } from './services/user-list.service';
               UtilityService, 
               ItemService, 
               ListItemService, 
-              UserListService],
+              UserListService,
+              AuthLoginService,
+              AuthServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
