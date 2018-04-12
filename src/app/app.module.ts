@@ -31,6 +31,7 @@ import { CheckNameService } from './services/check-name.service';
 import { ListService } from './services/list.service';
 import { HomeListeComponent } from './components/home-liste/home-liste.component';
 import { DialogAddListComponent } from './components/dialog-add-list/dialog-add-list.component';
+import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { DialogAddListComponent } from './components/dialog-add-list/dialog-add-
     ComponentNotFoundComponent,
     NavbarComponent,
     HomeListeComponent,
-    DialogAddListComponent
+    DialogAddListComponent,
+    ElencoListeComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
