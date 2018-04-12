@@ -46,7 +46,7 @@ li {
 }
 
 .logo {
-    width: 30%;
+    width: 20%;
     display: inline-block;
 }
 
@@ -70,4 +70,6 @@ li {
 
 .right {
     float: right;
+    width: 80%;
+    text-align: right;
 }
