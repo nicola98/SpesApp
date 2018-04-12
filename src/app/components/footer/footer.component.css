@@ -42,6 +42,10 @@
     padding: 10px 0;
 }
 
+.social img:hover {
+    transform: scale(1.1);
+}
+
 .copyright {
     background-color: #505c7a;
     width: 100%;
