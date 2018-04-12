@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ServiceMapItem } from '../model/ServiceMapItem';
 import { LOGINMOCK } from '../mock/login.mock';
-import { RegistratiService } from './registrati.service';
 import { REGISTRATIMOCK } from '../mock/registrati.mock';
-import { ListService } from './list.service';
+import { LISTALISTMOCK } from '../mock/listaList.mock';
 
 @Injectable()
 export class UrlMockUtilsService {
@@ -20,8 +19,8 @@ export class UrlMockUtilsService {
 
   serviceMap: {[key:string] : ServiceMapItem;} = {
       loginService: {mock: LOGINMOCK, url:'auth/login'},
-      RegistratiService: {mock: REGISTRATIMOCK, url:'auth/registrati'},
-      ListService: {mock: LISTALISTMOCK, url:'auth/listaList'}
+      registratiService: {mock: REGISTRATIMOCK, url:'auth/registrati'},
+      returnList: {mock: LISTALISTMOCK, url:'auth/List'}
   }
 
 }

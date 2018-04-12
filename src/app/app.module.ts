@@ -28,6 +28,7 @@ import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
 import { RegistratiService } from './services/registrati.service';
 import { CheckNameService } from './services/check-name.service';
+import { ListService } from './services/list.service';
 
 
 @NgModule({
@@ -58,7 +59,7 @@ import { CheckNameService } from './services/check-name.service';
     MainRouter
   ],
   providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService,
-     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService],
+     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService, ListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

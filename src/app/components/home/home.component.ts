@@ -10,10 +10,20 @@ import { List } from '../../entities/List';
 export class HomeComponent implements OnInit {
 
   private list : List[];
+  private listVuota : boolean = true;
   constructor(private listService : ListService) { }
 
   ngOnInit() {
-    this.list=this.listService.returnList("1");
+    this.listService.returnList("1",
+      (response) => {
+        console.log("chiamata list fatta");
+        this.list=response;
+        console.log(this.list);
+     }, (error) => {
+       console.log("error");
+     });
+    if(this.list.length>0)
+     this.listVuota=false;
   }
 
 }
