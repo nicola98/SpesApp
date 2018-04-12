@@ -15,7 +15,7 @@ import { RegistratiService } from '../../services/registrati.service';
 export class DialogSignUpComponent implements OnInit {
   
   private user : User = new User ("so", "hg");
-  constructor(private dialog: MatDialog, private registratiService : RegistratiService) { }
+  constructor(private registratiService : RegistratiService) { }
 
   ngOnInit() {
   }

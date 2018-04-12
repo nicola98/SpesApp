@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ListService } from '../../services/list.service';
 import { List } from '../../entities/List';
+import { MatDialog } from '@angular/material';
+import { DialogAddListComponent } from '../dialog-add-list/dialog-add-list.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   private list : List[];
   private listVuota : boolean = true;
-  constructor(private listService : ListService) { }
+  constructor(private listService : ListService, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.listService.returnList("1",
@@ -24,6 +26,11 @@ export class HomeComponent implements OnInit {
      });
     if(this.list.length>0)
      this.listVuota=false;
+  }
+
+  addList(){
+    console.log("yeeeeeeyeeeee");
+    this.dialog.open(DialogAddListComponent)
   }
 
 }
