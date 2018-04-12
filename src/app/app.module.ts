@@ -30,6 +30,7 @@ import { RegistratiService } from './services/registrati.service';
 import { CheckNameService } from './services/check-name.service';
 import { ListService } from './services/list.service';
 import { HomeListeComponent } from './components/home-liste/home-liste.component';
+import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { HomeListeComponent } from './components/home-liste/home-liste.component
     UserProfileComponent,
     ComponentNotFoundComponent,
     NavbarComponent,
-    HomeListeComponent
+    HomeListeComponent,
+    ElencoListeComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
