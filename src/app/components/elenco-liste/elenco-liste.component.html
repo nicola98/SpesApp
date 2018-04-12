@@ -1,15 +1,10 @@
 <section id="elenco-liste">
     <div class="container">
         <div class="wrap">
-            <img src="../../../assets/elenco-liste/carne.jpg" alt="">
-            <img src="../../../assets/elenco-liste/condimenti.jpeg" alt="">
-            <img src="../../../assets/elenco-liste/cucina.jpg" alt="">
-            <img src="../../../assets/elenco-liste/dessert.jpg" alt="">
-            <img src="../../../assets/elenco-liste/frutta-verdura.jpg" alt="">
-            <img src="../../../assets/elenco-liste/pesce.jpg" alt="">
-            <img src="../../../assets/elenco-liste/snack.jpg" alt="">
-            <img src="../../../assets/elenco-liste/surgelati.jpg" alt="">
-            <img src="../../../assets/elenco-liste/vino.jpg" alt="">
+            <div *ngFor="let item of list; let i=index">
+                <img src="{{item.image}}" alt="">
+                <div>name: {{item.name}}</div>
+            </div>
         </div>
     </div>
 </section>

@@ -5,9 +5,10 @@
         </div>
     </div>
 </div>
-<app-elenco-liste></app-elenco-liste>
-<!-- <app-home-liste>
-</app-home-liste> -->
+
+<app-home-liste *ngIf="listVuota"></app-home-liste>
+<app-elenco-liste *ngIf="!listVuota"></app-elenco-liste>
+
 <div class="container">
     <div class="list-btn">
         <button (click)="addList()">+</button>
