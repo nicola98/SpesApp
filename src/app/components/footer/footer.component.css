@@ -1,49 +1,57 @@
-body {
-  background-color: #264d73;
-  color: white;
-}
-p{
-  margin-bottom: 15px;
-}
-.one {
+/* FOOTER */
 
-  float: left;
-  margin-left: 80px;
-  margin-right: 70px;
-  margin-top: 70px;
-  margin-bottom: 20px;
-}
-.two {
-  float: left;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 70px;
-  margin-bottom: 20px;
+#footer {
+    background-color: #505c7a;
+    padding-bottom: 0px;
 }
 
-.three {
-  float: left;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 70px;
-  margin-bottom: 20px;
+.logo {
+    width: 25%;
+    float: left;
+    text-align: center;
 }
 
-.four {
-  float: left;
-  margin-left: 350px;
-  margin-right: 70px;
-  margin-top: 70px;
-  margin-bottom: 20px;
+.info_footer {
+    width: 25%;
+    float: left;
 }
-.down {
-  text-align: center;
-  padding: 15px;
-}
-.fb { float: left; }
-.tweet { float: left;}
 
-img { padding: 5px;}
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.info_footer li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.info_footer li a {
+    color: #fff;
+}
+
+.info_footer li:hover {
+    opacity: 0.85;
+}
+
+.social {
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #fff;
+}
+
+.social h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.copyright {
+    background-color: #505c7a;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    padding: 50px 0;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 10px;
 }
