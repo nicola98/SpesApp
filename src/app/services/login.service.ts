@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { GenericServiceService } from './generic-service.service';
 import { HttpHeaders} from '@angular/common/http';
-import { User } from '../data/User';
+import { User } from '../entities/User';
 
 @Injectable()
 export class LoginService {
