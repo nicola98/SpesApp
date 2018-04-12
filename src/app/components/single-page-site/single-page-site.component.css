@@ -1,250 +1,217 @@
-#Scarica {
-    padding-top: 50px;
-    color: white;
-}
+/* SCARICA */
 
-#Scarica .content {
-    background-image: url("../../../assets/img/BG_home.jpg");
+#scarica {
+    background-image: url('../../../assets/img/BG_home.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 325px;
+    min-height: 250px;
+    background-position: bottom;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
 
-#Scarica .contentTitle {
-    width: 300px;
-    margin: 0px 50px 0px 150px;
-    padding-top: 70px;
+.title {
+    width: 50%;
+    margin: 60px 0 0 100px;
+    float: left;
 }
 
-#Scarica .contentText {
-    width: 380px;
-    margin: 20px 50px 0px 150px;
+.title h1 {
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-#Scarica .content p {
-    font-size: 18px;
+.title h2 {
+    margin: 20px 0 0;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
 }
 
-#Scarica .content h1 {
-    font-size: 30px;
-    font-weight: bold;
+.download_phone {
+    width: 10%;
+    float: right;
+    margin-top: -350px;
+    margin-right: 280px;
 }
 
-#Scarica .footer {
+#download {
     background-color: #59afe1;
-    padding: 25px 0px;
+    min-height: 100px;
+    color: #fff;
+    padding: 40px 0;
 }
 
-#Scarica .footer p {
-    width: 350px;
-    margin: 0px 50px 0px 150px;
+.download_info {
+    width: 50%;
+    float: left;
+    margin-left: 100px;
+    margin-top: -30px;
 }
 
-#Scarica .footer p img {
-    clear: left;
-    margin: 20px 20px 20px 0px
+.download_info p {
+    font-size: 16px;
+    margin: 20px 0;
 }
 
-#Scarica .footer img.phone {
-    margin-top: -409px;
-    margin-left: 700px;
-    position: absolute;
+.phone_img {
+    margin-top: 56px;
 }
 
 
-/* .half-circle {
-    width: 75px;
-    height: 35px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-color: #59afe1;
-    border-top: 0;
-    position: absolute;
-    margin-left: 565px;
-} */
+/* ARROW */
 
-.half-circle {
-    width: 800px;
+.arrow-wrap {
+    width: 100px;
     margin: 0 auto;
 }
 
-.half-circle img {
+.arrow-white {
     margin: 0px auto;
     display: block;
+    padding: 0 30px 30px 30px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     background-color: #59afe1;
+}
+
+.arrow-blue {
+    margin: 0px auto -46px;
+    display: block;
     padding: 0 30px 30px 30px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 50;
 }
 
 
-/*fine css scarica*/
+/* FUNZIONALITÀ */
 
-#Funzionalita {
-    color: #515C7A;
-}
-
-#Funzionalita .contentTitle {
-    margin-top: 50px;
+.funzionalita_title {
+    width: 100%;
+    color: #505c7a;
     text-align: center;
 }
 
-#Funzionalita .contentTitle h3 {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 15px;
+.funzionalita_title h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
 }
 
-#Funzionalita .contentInstruction {
-    margin: 30px auto;
-    width: 900px;
+.funzionalita_title h4 {
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 300;
 }
 
-#Funzionalita .contentInstruction2 {
-    margin: 30px auto;
-    width: 900px;
+#funzionalita .wrap img {
+    width: 300px;
+    max-width: 100%;
 }
 
-.cardR {
-    width: 445px;
-    display: inline-block;
+.funz {
+    width: 40%;
+    float: left;
+    margin: 80px 40px;
 }
 
-.cardL {
-    width: 445px;
-    display: inline-block;
+.funz2 {
+    margin-top: 70px;
 }
 
-.contentRight {
+.funz4 {
+    margin-top: 40px;
+}
+
+.funz p {
+    margin: 20px 0;
+}
+
+.funz h5 {
+    font-weight: 400;
+    font-family: 'Berkshire Swash';
+    color: #505c7a;
+    font-size: 20px;
+    position: relative;
+    z-index: 50;
+}
+
+.funz1 h5 {
     text-align: right;
 }
 
-.contentLeft {
-    width: 250px;
+.funz2 h5 {
+    margin-bottom: -50px;
 }
 
-.contentInstruction .cardR .contentRight {
-    margin-left: 205px;
+.funz3 h5 {
+    text-align: right;
+    margin-bottom: -50px;
 }
 
-.contentInstruction .cardL .contentRight {
-    margin-right: 100px;
-}
-
-.contentInstruction2 .cardR .contentLeft {
-    margin-left: 100px;
-}
-
-.numberCircle {
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    padding: 8px;
-    background: #59afe1;
-    color: white;
-    text-align: center;
-    font: 24px Arial, sans-serif;
-}
-
-.numberCircleRight {
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    padding: 8px;
-    margin-left: 401px;
-    background: #59afe1;
-    color: white;
-    text-align: center;
-    font: 24px Arial, sans-serif;
-}
-
-.contentInstruction2 .cardL .numberCircleRight {
-    margin-left: 301px;
-}
-
-.contentInstruction .cardR .numberCircle {
-    margin-left: 100px;
-}
-
-.half-circle2 {
-    margin: 0px auto;
-    display: block;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-color: white;
-    padding: 0 30px 30px 30px;
-}
-
-.half-circle2 img {
-    margin: 0px auto;
-    display: block;
+.funz4 h5 {
+    margin-bottom: -70px;
 }
 
 
-/* fine css funzionalità*/
+/* CONTATTI */
 
-#Contatti {
-    padding-top: 50px;
+#contatti {
     background-color: #59afe1;
-    color: white;
+    min-height: 800px;
 }
 
-#Contatti .contentTitle {
+.contatti_title {
+    width: 100%;
+    color: #505c7a;
     text-align: center;
+    color: #fff;
 }
 
-#Contatti .contentTitle h4 {
-    font-style: italic;
+.contatti_title h3 {
+    font-size: 30px;
+    padding: 20px 0;
+    font-family: 'Berkshire Swash';
+}
+
+.contatti_title h4 {
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    padding: 10px 0;
+    font-weight: 300;
 }
 
-textarea {
-    width: 800px;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
+.contatti_form input {
+    width: 100%;
+    height: 35px;
+    margin-top: 50px;
     font-size: 16px;
-    margin-bottom: 15px;
-    resize: none;
+    border: 0;
 }
 
-input[type=text] {
-    width: 800px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    margin: 20px 0px;
+.contatti_form textarea {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 0;
+    overflow: auto;
 }
 
-input[type=submit] {
-    background-color: #515C7A;
-    width: 800px;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    margin-bottom: 40px;
-    cursor: pointer;
+#contatti button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    background-color: #505c7a;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
 }
 
-.center {
-    margin: auto;
-}
-
-#report {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.toTop {
-    cursor: pointer;
-    position: fixed;
-    z-index: 9999;
-    right: 50px;
-    bottom: 50px;
+#contatti button:hover {
+    transform: scale(1.01);
 }
