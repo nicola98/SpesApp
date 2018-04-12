@@ -3,17 +3,9 @@ import { Item } from '../entities/item';
 
 @Injectable()
 export class ItemService {
-  private item: Item;
+  /*private item: Item;
 
-  private items = [
-    new Item("../../../assets/product/product_1.png", "pane", 0, 0),
-    new Item("../../../assets/product/product_2.png", "focaccia", 0, 0),
-    new Item("../../../assets/product/product_3.png", "bon bon", 0, 0),
-    new Item("../../../assets/product/product_4.png", "cioccolato", 0, 0),
-    new Item("../../../assets/product/product_5.png", "torta", 0, 0),
-    new Item("../../../assets/product/product_6.png", "petto di pollo", 0, 0),
-    new Item("../../../assets/product/product_7.png", "pomodorini", 0, 0),
-    new Item("../../../assets/product/product_8.png", "formaggio", 0, 0)];
+  private items = [];
 
   constructor() { }
 
@@ -41,6 +33,6 @@ export class ItemService {
     }
     return null;
   }
-
+*/
 
 }

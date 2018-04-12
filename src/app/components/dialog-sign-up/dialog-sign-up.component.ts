@@ -30,6 +30,7 @@ export class DialogSignUpComponent implements OnInit {
      this.registratiService.executeRegistration(this.user,
       (response) => {
         console.log("success");
+        console.log(response);
      }, (error) => {
        console.log("error");
      });

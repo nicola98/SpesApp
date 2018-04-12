@@ -8,7 +8,7 @@ import { CheckNameService } from '../../services/check-name.service';
 })
 export class NavbarComponent implements OnInit {
 
-  actUser : string;
+  actUser : string = "ciao";
 
   constructor(private checkNameService : CheckNameService) {
     console.log("newValue fuori");

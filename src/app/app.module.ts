@@ -31,6 +31,8 @@ import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
 import { RegistratiService } from './services/registrati.service';
 import { CheckNameService } from './services/check-name.service';
+import { ListService } from './services/list.service';
+import { EditListComponent } from './components/edit-list/edit-list.component';
 
 
 @NgModule({
@@ -46,7 +48,8 @@ import { CheckNameService } from './services/check-name.service';
     RicetteComponent,
     UserProfileComponent,
     ComponentNotFoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    EditListComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
