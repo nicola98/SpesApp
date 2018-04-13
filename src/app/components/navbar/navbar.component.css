@@ -51,6 +51,11 @@ li {
     display: inline-block;
 }
 
+.logo .selected {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
 .logo img {
     height: 50px;
     float: left;
@@ -76,12 +81,12 @@ li {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
-    right: 3%;
+    right: 2%;
 }
 
 .dropdown-content a {
@@ -101,4 +106,16 @@ li {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.selected {
+    background-color: #59afe1 !important;
+    border-radius: 20px;
+    padding: 10px 20px !important;
+    color: #fff !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
