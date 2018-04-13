@@ -3,6 +3,8 @@ import { List } from '../../entities/List';
 import { ListService } from '../../services/list.service';
 import { ActivatedRoute } from '@angular/router';
 import { Item } from '../../entities/Item';
+import { DialogAddItemComponent } from '../dialog-add-item/dialog-add-item.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-list-ricette-detail',
@@ -17,7 +19,7 @@ export class ListRicetteDetailComponent implements OnInit {
   private items: Item[];
   private idList;
 
-  constructor(private listService : ListService,private router: ActivatedRoute ) {
+  constructor(private listService : ListService,private router: ActivatedRoute,  private dialog: MatDialog) {
     this.router.params.subscribe(params=>{
       if(params['id'] != '' && params['id'] != null)
         this.idList=(params['id']);
@@ -40,5 +42,10 @@ export class ListRicetteDetailComponent implements OnInit {
    this.listVuotaRicette=false;
   }
 
+  
+  addItem(){
+    console.log("yeeeeeeyeeeee");
+    this.dialog.open(DialogAddItemComponent)
+  }
 
 }
