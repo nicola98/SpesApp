@@ -13,6 +13,8 @@ import { HeaderService } from '../../services/header.service';
 })
 export class HeaderComponent implements OnInit {
 
+private shown = false;
+
   constructor(private dialog: MatDialog, private router : Router, private headerService: HeaderService) { }
 
   signUpopenDialog(){
@@ -29,4 +31,7 @@ export class HeaderComponent implements OnInit {
     this.headerService.setAnchor(anchor);
   }
 
+  show(){
+    this.shown = true;
+  }
 }

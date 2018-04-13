@@ -101,11 +101,13 @@ a {
         width: 100%;
         text-align: center;
         margin-top: -4px;
+        overflow: hidden;
+        height: 0px;
     }
     .accedi {
         background-color: #295067 !important;
         border-radius: 0px;
-        padding: 0px;
+        padding: 20px !important;
         margin: 0px;
     }
     .accedi:hover {
@@ -126,14 +128,21 @@ a {
     .header_menu_item button {
         color: #fff;
     }
-    .right button:hover {
-        padding: 0px;
-    }
     .right a:hover {
         background-color: transparent;
     }
     .registrati:hover {
         padding: 0px;
         transform: scale(1);
+    }
+    .registrati {
+        background: transparent;
+    }
+    .registrati:hover {
+        padding: 0px;
+    }
+    .right button:hover {
+        padding: 20px;
+        background-color: transparent;
     }
 }
