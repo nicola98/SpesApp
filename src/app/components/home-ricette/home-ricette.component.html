@@ -1,0 +1,23 @@
+<div *ngIf="listVuotaRicette" id="fascia">
+  <div class="container">
+      <div class="fascia-info">
+          <p>Nessuna ricetta presente</p>
+      </div>
+  </div>
+</div>
+
+<div *ngIf="!listVuotaRicette" id="fascia">
+  <div class="container">
+      <div class="fascia-info">
+          <p>Elenco ricette({{listRicette.length}})</p>
+      </div>
+  </div>
+</div>
+
+<app-ricette></app-ricette>
+
+<div class="container">
+  <div class="list-btn">
+      <button (click)="addList()">+</button>
+  </div>
+</div>
