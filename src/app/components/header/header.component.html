@@ -5,20 +5,26 @@
                 <div class="logo">
                     <a (click)="setAnchor('scarica')"><img src="../../../assets/img/logo.png" alt=""></a>
                 </div>
-                <ul class="right">
-                    <li>
+
+                <a href="" class="header_icon_bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <ul class="right header_menu">
+                    <li class="header_menu_item">
                         <a (click)="setAnchor('scarica')">Scarica</a>
                     </li>
-                    <li>
+                    <li class="header_menu_item">
                         <a (click)="setAnchor('funzionalita')">Funzionalità</a>
                     </li>
-                    <li>
+                    <li class="header_menu_item">
                         <a (click)="setAnchor('contatti')">Contatti</a>
                     </li>
-                    <li>
-                        <button (click)="signUpopenDialog()">Registrati</button>
+                    <li class="header_menu_item">
+                        <button (click)="signUpopenDialog()" class="registrati">Registrati</button>
                     </li>
-                    <li>
+                    <li class="header_menu_item">
                         <button (click)="signInopenDialog()" class="accedi">Accedi</button>
                     </li>
                 </ul>

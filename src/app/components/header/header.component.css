@@ -2,8 +2,9 @@ a {
     text-decoration: none;
 }
 
-li {
+.header_menu_item {
     display: inline-block;
+    background-color: #fff;
 }
 
 #navbar {
@@ -21,7 +22,7 @@ li {
     padding: 20px;
     color: #555;
     font-size: 16px;
-    line-height: 75px;
+    line-height: 70px;
 }
 
 .right button {
@@ -71,6 +72,68 @@ li {
 
 .right {
     float: right;
-    width: 80%;
-    text-align: right;
+}
+
+.header_icon_bar {
+    display: block;
+    float: right;
+    padding: 20px;
+    display: none;
+}
+
+.header_icon_bar span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #295067;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+    .header_icon_bar {
+        display: block;
+        margin: 5px 0;
+    }
+    .header_menu_item {
+        display: block;
+    }
+    .header_menu {
+        width: 100%;
+        text-align: center;
+        margin-top: -4px;
+    }
+    .accedi {
+        background-color: #295067 !important;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .accedi:hover {
+        transform: scale(1);
+        background-color: #305e79 !important;
+        border-radius: 0px;
+    }
+    .header_menu_item {
+        display: block;
+        background-color: #295067;
+    }
+    .header_menu_item:hover {
+        background-color: #305e79;
+    }
+    .header_menu_item a {
+        color: #fff;
+    }
+    .header_menu_item button {
+        color: #fff;
+    }
+    .right button:hover {
+        padding: 0px;
+    }
+    .right a:hover {
+        background-color: transparent;
+    }
+    .registrati:hover {
+        padding: 0px;
+        transform: scale(1);
+    }
 }
