@@ -13,11 +13,12 @@ import { CheckNameService } from '../../services/check-name.service';
   styleUrls: ['./dialog-sign-in.component.css']
 })
 export class DialogSignInComponent implements OnInit {
-  
+
+
   private actualUser : string;
   private mockUser : string[];
   private actualUserValue : string[];
-  private user : User = new User("email", "password");
+  private user : User = new User();
   constructor(private router : Router, private checkLoginService : CheckLoginService, private loginService : LoginService,
      private checkNameService : CheckNameService){
 
