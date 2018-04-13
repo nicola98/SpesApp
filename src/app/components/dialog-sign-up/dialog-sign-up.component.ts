@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { LoginService } from '../../services/login.service';
 import { CheckLoginService } from '../../services/check-login.service';
 import { User } from '../../entities/User';
 import { Router } from '@angular/router';
 import { DialogSignInComponent } from '../dialog-sign-in/dialog-sign-in.component';
-import { MatDialog } from '@angular/material/dialog';
 import { RegistratiService } from '../../services/registrati.service';
 
 @Component({
@@ -22,10 +22,6 @@ export class DialogSignUpComponent implements OnInit {
   ngOnInit() {
   }
 
-  accedi(){
-    console.log("entri in accedi");
-   }
-
    registrati(){
     console.log("entri in registrati");
      this.registratiService.executeRegistration(this.user,
@@ -36,5 +32,10 @@ export class DialogSignUpComponent implements OnInit {
        console.log("error");
      });
    }
+
+   signInopenDialog(){
+     this.dialog.closeAll();
+    this.dialog.open(DialogSignInComponent)
+  }
 
 }
