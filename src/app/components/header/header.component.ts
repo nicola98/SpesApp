@@ -4,6 +4,7 @@ import { DialogSignUpComponent } from '../dialog-sign-up/dialog-sign-up.componen
 import { DialogSignInComponent } from '../dialog-sign-in/dialog-sign-in.component';
 import { Overlay } from '@angular/cdk/overlay';
 import { Router } from '@angular/router';
+import { HeaderService } from '../../services/header.service';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private dialog: MatDialog, private router : Router) { }
+  constructor(private dialog: MatDialog, private router : Router, private headerService: HeaderService) { }
 
   signUpopenDialog(){
     this.dialog.open(DialogSignUpComponent)
@@ -22,6 +23,10 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  setAnchor(anchor){
+    this.headerService.setAnchor(anchor);
   }
 
 }

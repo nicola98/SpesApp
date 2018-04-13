@@ -62,4 +62,47 @@ export class GenericServiceService {
     }
   }
 
+  callDelete(idUrl: string, header: HttpHeaders = null, callback = null, errorCallback = null){
+    if(this.utilityService.getUseMock())
+    {
+      this.http.delete(this.urlMockService.getUrlService(idUrl), { headers: this.getAuthHeader(header), observe: 'response' }).subscribe(
+        response=>{
+          if(response.headers && response.headers.get("jwt")){
+            this.tkn = response.headers.get("jwt");
+          }
+          if(callback)
+            callback(response)
+        },
+        error=>{
+          if(errorCallback)
+            errorCallback(error)
+        }
+      )
+   }
+   else{
+    callback(this.urlMockService.getMock(idUrl));
+    }
+  }
+
+  callPut(body: any, idUrl: string, header: HttpHeaders = null, callback = null, errorCallback = null){
+    if(this.utilityService.getUseMock())
+    {
+      this.http.put(this.urlMockService.getUrlService(idUrl), body, { headers: this.getAuthHeader(header), observe: 'response' }).subscribe(
+        response=>{
+          if(response.headers && response.headers.get("jwt")){
+            this.tkn = response.headers.get("jwt");
+          }
+          if(callback)
+            callback(response)
+        },
+        error=>{
+          if(errorCallback)
+            errorCallback(error)
+        }
+      )
+    }
+    else{
+      callback(this.urlMockService.getMock(idUrl));
+    }
+  }
 }

@@ -190,6 +190,10 @@ strong {
     transform: scale(1.1);
 }
 
+.padding {
+    padding: 100px 0;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;

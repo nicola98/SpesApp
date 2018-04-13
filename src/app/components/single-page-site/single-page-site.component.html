@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <!-- SCARICA -->
-<section id="scarica">
+<section #scarica id="scarica">
 
     <div class="container">
         <div class="title">
@@ -36,7 +36,7 @@
 </div>
 
 <!-- FUNZIONALITÀ -->
-<section id="funzionalita">
+<section #funzionalita id="funzionalita">
     <div class="container">
 
         <div class="funzionalita_title">
@@ -82,7 +82,7 @@
 </div>
 
 <!-- CONTATTI -->
-<section id="contatti">
+<section #contatti id="contatti">
     <div class="container">
         <div class="contatti_title">
             <h3>Vuoi scriverci un messaggio?</h3>
@@ -97,3 +97,7 @@
         </div>
     </div>
 </section>
+
+<div class="backtop">
+    <a (click)="setAnchor('scarica')"><img src="../../../assets/img/backtotop.png" alt=""></a>
+</div>

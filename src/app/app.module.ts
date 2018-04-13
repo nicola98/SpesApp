@@ -35,6 +35,7 @@ import { ListItemService } from './services/list-item.service';
 import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-item.component';
 import { DialogModificaListaComponent } from './components/dialog-modifica-lista/dialog-modifica-lista.component';
 import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/dialog-elimita-lista.component';
+import { HeaderService } from './services/header.service';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/d
     DialogSignInComponent,
     DialogAddListComponent,
     DialogElimitaListaComponent,
-    DialogModificaListaComponent
+    DialogModificaListaComponent,
+    DialogAddItemComponent
   ], 
   imports: [
     BrowserModule,
@@ -74,7 +76,7 @@ import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/d
     MainRouter
   ],
   providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService,
-     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, ListService, ListItemService],
+     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, ListService, ListItemService, HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
