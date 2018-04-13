@@ -1,0 +1,29 @@
+#home-liste {
+    min-height: 600px;
+}
+
+.welcome {
+    text-align: center;
+    color: #505c7a;
+}
+
+.welcome h1 {
+    font-family: 'Berkshire Swash';
+    font-size: 36px;
+    padding: 10px 0;
+}
+
+.welcome h2 {
+    font-size: 26px;
+    padding: 10px 0;
+}
+
+.welcome img {
+    padding: 10px 0;
+}
+
+.big-arrow {
+    float: right;
+    margin-right: 120px;
+    margin-top: -80px;
+}

@@ -1,0 +1,19 @@
+<div id="dialogForm">
+    <div class="dialog_logo">
+        <h4>Aggiungi lista</h4>
+        <img src="../../../assets/img/faispesa_txt.png" alt="">
+
+    </div>
+    <div class="form-group">
+        <label for="">Nome della lista</label>
+        <input type="text" class="form-control" placeholder="Nome della lista">
+    </div>
+    <div class="form-group">
+        <label for="">Descrizione</label>
+        <input type="text" class="form-control" placeholder="Descrizione">
+    </div>
+    <div class="dialog_button">
+        <button mat-dialog-close="yes" (click)="annulla()">Annulla</button>
+        <button mat-dialog-close="yes" (click)="add()" class="signup_button">Conferma</button>
+    </div>
+</div>

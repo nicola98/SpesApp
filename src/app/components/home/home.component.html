@@ -1,0 +1,24 @@
+<div *ngIf="listVuota" id="fascia">
+    <div class="container">
+        <div class="fascia-info">
+            <p>Nessuna lista presente</p>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!listVuota" id="fascia">
+    <div class="container">
+        <div class="fascia-info">
+            <p>Elenco liste della spesa ({{list.length}})</p>
+        </div>
+    </div>
+</div>
+
+<app-home-liste *ngIf="listVuota"></app-home-liste>
+<app-elenco-liste *ngIf="!listVuota"></app-elenco-liste>
+
+<div class="container">
+    <div class="list-btn">
+        <button (click)="addList()">+</button>
+    </div>
+</div>
