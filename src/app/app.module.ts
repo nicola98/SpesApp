@@ -34,6 +34,8 @@ import { DialogAddListComponent } from './components/dialog-add-list/dialog-add-
 import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.component';
 import { ListItemService } from './services/list-item.service';
 import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-item.component';
+import { DialogModificaListaComponent } from './components/dialog-modifica-lista/dialog-modifica-lista.component';
+import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/dialog-elimita-lista.component';
 
 
 @NgModule({
@@ -53,12 +55,16 @@ import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-
     HomeListeComponent,
     DialogAddListComponent,
     ElencoListeComponent,
-    DialogAddItemComponent
+    DialogAddItemComponent,
+    DialogModificaListaComponent,
+    DialogElimitaListaComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
     DialogSignInComponent,
-    DialogAddListComponent
+    DialogAddListComponent,
+    DialogElimitaListaComponent,
+    DialogModificaListaComponent
   ], 
   imports: [
     BrowserModule,
