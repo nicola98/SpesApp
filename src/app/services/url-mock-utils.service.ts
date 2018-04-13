@@ -1,3 +1,4 @@
+import { LISTRICETTEMOCK } from './../mock/listRicette.mock';
 import { Injectable } from '@angular/core';
 import { ServiceMapItem } from '../model/ServiceMapItem';
 import { LOGINMOCK } from '../mock/login.mock';
@@ -7,6 +8,7 @@ import { ADDLISTMOCK } from '../mock/addList.mock';
 import { LISTITEMTMOCK } from '../mock/listItem.mock';
 import { DELETELISTMOCK } from '../mock/deleteList.mock';
 import { MODIFICALISTMOCK } from '../mock/modificaList.mock';
+
 
 @Injectable()
 export class UrlMockUtilsService {
@@ -29,6 +31,7 @@ export class UrlMockUtilsService {
     removeListService: {mock: DELETELISTMOCK, url:'auth/removeList'},
     returnListItem: {mock: LISTITEMTMOCK, url:'auth/removeListItem'},
     modificaListService: {mock: MODIFICALISTMOCK, url:'auth/removeListItem'},
+    returnListRicette: {mock: LISTRICETTEMOCK, url:'auth/listRicette'}
   }
 
 }
