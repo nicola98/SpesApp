@@ -14,6 +14,7 @@ import { DialogModificaListaComponent } from '../dialog-modifica-lista/dialog-mo
 export class ElencoListeComponent implements OnInit {
 
   private list : List[];
+  private id;
   constructor(private listService : ListService, private router : Router,  private dialog: MatDialog ) { }
 
   ngOnInit() {
@@ -39,6 +40,9 @@ export class ElencoListeComponent implements OnInit {
   }
 
   delete(item : List){
+    sessionStorage.setItem("nomeDaEliminare", item.name);
+    this.id = item.id
+    sessionStorage.setItem("idDaEliminare", this.id);
     this.dialog.open(DialogElimitaListaComponent);
   }
 
