@@ -132,3 +132,18 @@
 .container-img:hover .item-list_title {
     opacity: 0;
 }
+
+@media (max-width: 992px) {
+    .content .content-overlay1 {
+        width: 250px;
+        left: 48px;
+    }
+    .content .content-overlay {
+        width: 250px;
+        left: 46px;
+    }
+    .item-list_title {
+        width: 230px;
+        left: 46px;
+    }
+}
