@@ -1,0 +1,92 @@
+#profilo {
+    min-height: 500px;
+}
+
+.profilo {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.profile_img {
+    position: relative;
+    left: 28px;
+}
+
+.camera_icon {
+    background-color: #59afe1;
+    padding: 10px;
+    width: 30px !important;
+    border-radius: 50%;
+    position: relative;
+    right: 30px;
+    -webkit-box-shadow: 4px 3px 5px #a2a2a2;
+    box-shadow: 3px 2px 4px #a2a2a2;
+}
+
+.camera_icon:hover {
+    transform: scale(1.1);
+}
+
+.profilo-info h3 {
+    color: #505c7a;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profilo-info h3::after {
+    color: #505c7a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profilo-info p {
+    color: #BDBDBD;
+    padding: 10px 0;
+}
+
+.nome_profilo {
+    text-align: center;
+}
+
+.nome_profilo::after {
+    display: block;
+    content: "";
+    background: #BDBDBD;
+    width: 40px;
+    height: 2px;
+    margin-top: 13px;
+}
+
+h3.nome_profilo::after {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#fascia {
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 70px;
+    background-color: #FAFAFA;
+}
+
+.fascia-info {
+    padding: 20px 0;
+    color: #505C7A;
+    font-size: 16px;
+}
+
+.fascia_nome {
+    color: #505C7A;
+    padding-bottom: 5px;
+}
