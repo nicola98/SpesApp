@@ -63,7 +63,8 @@ import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/d
     DialogSignInComponent,
     DialogAddListComponent,
     DialogElimitaListaComponent,
-    DialogModificaListaComponent
+    DialogModificaListaComponent,
+    DialogAddItemComponent
   ], 
   imports: [
     BrowserModule,
