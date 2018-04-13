@@ -22,6 +22,7 @@ export class DialogElimitaListaComponent implements OnInit {
   }
 
   elimina(){
+    console.log("tiogoeigioaejgioerjg");
     this.listService.eliminaLista(sessionStorage.getItem("idDaEliminare"),
       (response) => {
         console.log("success");

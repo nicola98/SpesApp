@@ -40,9 +40,11 @@ export class ListService {
   }
 
   eliminaLista(idList : string, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
-    let header = new HttpHeaders();
+    let header = new HttpHeaders({
+      idList
+    });
     this.genericService.callDelete(
-      idList,
+      'removeListService',
       header,
       (response)=>{
         if(callback)

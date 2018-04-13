@@ -26,7 +26,7 @@ export class UrlMockUtilsService {
     returnList: {mock: LISTALISTMOCK, url:'auth/List'},
     addListService: {mock: ADDLISTMOCK, url:'auth/addList'},
     removeListService: {mock: DELETELISTMOCK, url:'auth/removeList'},
-
+    returnListItem: {mock: LISTITEMTMOCK, url:'auth/removeListItem'}
   }
 
 }

@@ -81,6 +81,6 @@ export class GenericServiceService {
    }
    else{
     callback(this.urlMockService.getMock(idUrl));
-  }
+    }
   }
 }
