@@ -186,6 +186,10 @@ strong {
     margin-left: -15px;
 }
 
+.list-btn button:hover {
+    transform: scale(1.1);
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;

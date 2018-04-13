@@ -8,9 +8,12 @@ label {
 button {
     border: 0;
     font-size: inherit;
-    padding: 10px 120px;
+    padding: 10px 60px;
     -webkit-box-shadow: 2px 3px 5px #c8c8c8;
     box-shadow: 2px 3px 5px #c8c8c8;
+    border: 1px solid #59afe1;
+    background-color: #fff;
+    color: #59afe1;
 }
 
 button:hover {
@@ -21,13 +24,14 @@ button:hover {
     display: inline-block;
     display: block;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .signup_button {
-    background-color: #59afe1;
+    background-color: #59afe1 !important;
     color: #fff;
     font-size: 16px;
+    border: 0px;
 }
 
 .form-group {
@@ -36,7 +40,7 @@ button:hover {
 
 .form-control {
     display: block;
-    width: 300px;
+    width: 100%;
     height: 24px;
     padding: 4px 0;
     font-size: 14px;
@@ -78,10 +82,4 @@ button:hover {
 
 .dialog_info a:hover {
     opacity: 0.85;
-}
-
-.dialog_accedi {
-    font-size: 18px;
-    font-weight: 600;
-    color: #59afe1 !important;
 }

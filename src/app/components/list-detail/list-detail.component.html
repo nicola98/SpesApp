@@ -1,16 +1,35 @@
+<div id="fascia">
+    <div class="container">
+        <div class="fascia-info">
+            <div class="num_liste">
+                <p>NumeroListe > <strong> NomeListaCorrente </strong></p>
+            </div>
+            <div class="dose">
+                <p>dose</p>
+            </div>
+            <div class="quantita">
+                <p>quantità</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section id="elenco-liste">
     <div class="container">
-        <div class="wrap">
-            <div *ngFor="let item of list; let i=index">
-                <div>id: {{item.id}}</div>
-                <img src="{{item.image}}" alt="">
-                <div>name: {{item.name}}</div>
-                <div>dose: {{item.dose}}</div>
-                <div>quantity: {{item.dose}}</div>
-                <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt=""></div>
-                <div *ngIf="!item.gotIt"> <img src="../../../assets/img/wrong.jpg" alt=""></div>
-                <div *ngIf="i!=list.length-1">-------------------</div>
+        <div *ngFor="let item of list; let i=index">
+            <div class="detail_1">
+                <div class="elenco-list_img"><img src="{{item.image}}" alt=""></div>
+                <span>{{item.name}}</span>
             </div>
+            <div class="detail_2">
+                <span>{{item.dose}}</span>
+            </div>
+            <div class="detail_3">
+                <span>{{item.dose}}</span>
+            </div>
+            <!-- <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt=""></div>
+            <div *ngIf="!item.gotIt"> <img src="../../../assets/img/wrong.jpg" alt=""></div>
+            <div *ngIf="i!=list.length-1"></div> -->
         </div>
     </div>
 </section>
