@@ -89,7 +89,7 @@ a {
     margin-bottom: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
     .header_icon_bar {
         display: block;
         margin: 5px 0;

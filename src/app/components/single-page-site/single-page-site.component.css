@@ -232,3 +232,18 @@
 .backtop a:hover {
     transform: scale(1.06);
 }
+
+@media (max-width:992px) {
+    .download_phone {
+        display: none;
+    }
+    .download_info {
+        margin-top: -33px;
+    }
+    .funz {
+        margin: 80px 30px;
+    }
+    .title h1 {
+        font-size: 38px;
+    }
+}
