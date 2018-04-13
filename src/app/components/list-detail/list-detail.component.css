@@ -17,6 +17,8 @@
     border-bottom: 1px solid #E5E5E5;
     padding-top: 70px;
     background-color: #FAFAFA;
+    position: fixed;
+    width: 100%;
 }
 
 .fascia-info {
@@ -44,6 +46,7 @@
 
 #elenco-liste {
     min-height: 300px;
+    margin: 0 0 80px;
 }
 
 .elenco-list_img {

@@ -3,17 +3,17 @@
         <div class="row">
             <nav>
                 <div class="logo">
-                    <a href="#"><img src="../../../assets/img/logo.png" alt=""></a>
+                    <a (click)="setAnchor('scarica')"><img src="../../../assets/img/logo.png" alt=""></a>
                 </div>
                 <ul class="right">
                     <li>
-                        <a href="#scarica">Scarica</a>
+                        <a (click)="setAnchor('scarica')">Scarica</a>
                     </li>
                     <li>
-                        <a href="#funzionalita">Funzionalità</a>
+                        <a (click)="setAnchor('funzionalita')">Funzionalità</a>
                     </li>
                     <li>
-                        <a href="#contatti">Contatti</a>
+                        <a (click)="setAnchor('contatti')">Contatti</a>
                     </li>
                     <li>
                         <button (click)="signUpopenDialog()">Registrati</button>

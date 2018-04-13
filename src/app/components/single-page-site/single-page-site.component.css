@@ -215,3 +215,20 @@
 #contatti button:hover {
     transform: scale(1.01);
 }
+
+.download_img a:hover {
+    transform: scale(1.1);
+}
+
+.backtop a {
+    border: 0;
+    background-color: transparent;
+    position: fixed;
+    z-index: 99;
+    right: 50px;
+    bottom: 30px;
+}
+
+.backtop a:hover {
+    transform: scale(1.06);
+}

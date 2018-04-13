@@ -123,6 +123,7 @@ button:hover {
 .detail_1 {
     width: 60%;
     float: left;
+    margin-left: 50px;
 }
 
 .detail_2 {

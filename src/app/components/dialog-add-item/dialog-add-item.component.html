@@ -10,19 +10,17 @@
 
     </div>
     <div id="elenco-liste">
-        <div class="container">
-            <div *ngFor="let item of list; let i=index">
-                <div class="detail_1">
-                    <div class="elenco-list_img"><img src="{{item.image}}" alt=""></div>
-                    <span>{{item.name}}</span>
-                </div>
-                <div class="detail_2">
-                    <span>{{item.dose}}</span>
-                </div>
-                <!-- <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt=""></div>
+        <div *ngFor="let item of list; let i=index">
+            <div class="detail_1">
+                <div class="elenco-list_img"><img src="{{item.image}}" alt=""></div>
+                <span>{{item.name}}</span>
+            </div>
+            <div class="detail_2">
+                <span>{{item.dose}}</span>
+            </div>
+            <!-- <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt=""></div>
                     <div *ngIf="!item.gotIt"> <img src="../../../assets/img/wrong.jpg" alt=""></div>
                     <div *ngIf="i!=list.length-1"></div> -->
-            </div>
         </div>
     </div>
     <div class="dialog_button">
