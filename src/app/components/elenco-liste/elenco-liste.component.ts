@@ -36,6 +36,8 @@ export class ElencoListeComponent implements OnInit {
 
   modifica(item : List)
   {
+    this.id = item.id
+    sessionStorage.setItem("idDaModificare", this.id);
     this.dialog.open(DialogModificaListaComponent);
   }
 

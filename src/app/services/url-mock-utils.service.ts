@@ -6,6 +6,7 @@ import { LISTALISTMOCK } from '../mock/listaList.mock';
 import { ADDLISTMOCK } from '../mock/addList.mock';
 import { LISTITEMTMOCK } from '../mock/listItem.mock';
 import { DELETELISTMOCK } from '../mock/deleteList.mock';
+import { MODIFICALISTMOCK } from '../mock/modificaList.mock';
 
 @Injectable()
 export class UrlMockUtilsService {
@@ -26,7 +27,8 @@ export class UrlMockUtilsService {
     returnList: {mock: LISTALISTMOCK, url:'auth/List'},
     addListService: {mock: ADDLISTMOCK, url:'auth/addList'},
     removeListService: {mock: DELETELISTMOCK, url:'auth/removeList'},
-    returnListItem: {mock: LISTITEMTMOCK, url:'auth/removeListItem'}
+    returnListItem: {mock: LISTITEMTMOCK, url:'auth/removeListItem'},
+    modificaListService: {mock: MODIFICALISTMOCK, url:'auth/removeListItem'},
   }
 
 }

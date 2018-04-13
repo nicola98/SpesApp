@@ -56,4 +56,20 @@ export class ListService {
       });
   }
 
+  modificaLista(list : List, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+    let header = new HttpHeaders();
+    this.genericService.callPost(
+      list,
+      'modificaListService',
+      header,
+      (response)=>{
+        if(callback)
+        callback(response)
+      }, 
+      (error)=>{
+        if(errorCallBack)
+        errorCallBack(error)
+      });
+  }
+
 }
