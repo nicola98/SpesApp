@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(private listService : ListService, private dialog: MatDialog) { }
 
   ngOnInit() {
-    this.listService.returnList("1",
+    this.listService.returnList(sessionStorage.getItem("idUser"),
       (response) => {
         console.log("chiamata list fatta");
         this.list=response;

@@ -1,7 +1,7 @@
 <section id="elenco-liste">
     <div class="container">
         <div class="wrap">
-            <div *ngFor="let item of list; let i=index" (click)="detail(item)">
+            <div *ngFor="let item of list; let i=index">
                 <div class="container-img">
                     <div class="content">
                         <div class="content-overlay1"></div>
@@ -11,9 +11,9 @@
                         <h3 class="item-list_title">{{item.name}}</h3>
 
                         <div class="content-details fadeIn-bottom">
-                            <a href=""><img src="../../../assets/img/modify.png" alt=""></a>
-                            <a href=""><img src="../../../assets/img/send.png" alt=""></a>
-                            <a href=""><img src="../../../assets/img/delete.png" alt=""></a>
+                            <a (click)="modifica(item)"><img src="../../../assets/img/modify.png" alt=""></a>
+                            <a><img (click)="detail(item)" src="../../../assets/img/send.png" alt=""></a>
+                            <a (click)="delete(item)"><img src="../../../assets/img/delete.png" alt=""></a>
                         </div>
                         <div class="content-details fadeIn-top">
                             <h3>{{item.name}}</h3>

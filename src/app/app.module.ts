@@ -27,13 +27,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthLoginService } from './services/auth-login.service';
 import { AuthServiceService } from './services/auth-service.service';
 import { RegistratiService } from './services/registrati.service';
-import { CheckNameService } from './services/check-name.service';
 import { ListService } from './services/list.service';
 import { HomeListeComponent } from './components/home-liste/home-liste.component';
 import { DialogAddListComponent } from './components/dialog-add-list/dialog-add-list.component';
 import { ElencoListeComponent } from './components/elenco-liste/elenco-liste.component';
 import { ListItemService } from './services/list-item.service';
 import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-item.component';
+import { DialogModificaListaComponent } from './components/dialog-modifica-lista/dialog-modifica-lista.component';
+import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/dialog-elimita-lista.component';
 
 
 @NgModule({
@@ -53,12 +54,16 @@ import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-
     HomeListeComponent,
     DialogAddListComponent,
     ElencoListeComponent,
-    DialogAddItemComponent
+    DialogAddItemComponent,
+    DialogModificaListaComponent,
+    DialogElimitaListaComponent
   ],
   entryComponents: [
     DialogSignUpComponent,
     DialogSignInComponent,
-    DialogAddListComponent
+    DialogAddListComponent,
+    DialogElimitaListaComponent,
+    DialogModificaListaComponent
   ], 
   imports: [
     BrowserModule,
@@ -69,7 +74,7 @@ import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-
     MainRouter
   ],
   providers: [CheckLoginService, GenericServiceService, LoginService, UrlMockUtilsService,
-     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, CheckNameService, ListService, ListItemService],
+     UtilityService, AuthLoginService, AuthServiceService, RegistratiService, ListService, ListItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

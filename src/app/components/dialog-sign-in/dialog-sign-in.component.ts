@@ -6,7 +6,6 @@ import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogSignUpComponent } from '../dialog-sign-up/dialog-sign-up.component';
 import { MAT_DIALOG_DATA } from '@angular/material';
-import { CheckNameService } from '../../services/check-name.service';
 @Component({
   selector: 'app-dialog-sign-in',
   templateUrl: './dialog-sign-in.component.html',
@@ -15,11 +14,11 @@ import { CheckNameService } from '../../services/check-name.service';
 export class DialogSignInComponent implements OnInit {
   
   private actualUser : string;
+  private idActualUser : string;
   private mockUser : string[];
   private actualUserValue : string[];
   private user : User = new User("email", "password");
-  constructor(private router : Router, private checkLoginService : CheckLoginService, private loginService : LoginService,
-     private checkNameService : CheckNameService){
+  constructor(private router : Router, private checkLoginService : CheckLoginService, private loginService : LoginService,){
 
   }
 
@@ -33,16 +32,14 @@ export class DialogSignInComponent implements OnInit {
      this.loginService.executeLogin(this.user,
       (response) => {
         console.log("success");
-       /* this.actualUser = response;
-        this.mockUser = this.actualUser.split(",", 1);
-        this.actualUserValue = this.mockUser[0].split(":", 1);
-        console.log(this.actualUserValue[0]);*/
-        //sessionStorage.setItem("idUser", "1");
+        this.actualUser = response.user;
+        this.idActualUser = response.id;
         this.router.navigate(['/home']);
         sessionStorage.setItem("logged", "true");
-        this.checkNameService.nextUserName(this.actualUser);
+        sessionStorage.setItem("user", this.actualUser);
+        sessionStorage.setItem("idUser", this.idActualUser)
         this.checkLoginService.nextLogged(true);
-        console.log(response);
+        console.log(this.actualUser);
      }, (error) => {
        console.log("error");
     }); 
