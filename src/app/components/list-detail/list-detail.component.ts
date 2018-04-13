@@ -22,7 +22,7 @@ export class ListDetailComponent implements OnInit {
     });
     console.log(this.idList);
    }
- 
+
   ngOnInit() {
     this.listItemService.returnListItem(this.idList,
       (response) => {

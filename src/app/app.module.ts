@@ -35,6 +35,8 @@ import { ListItemService } from './services/list-item.service';
 import { DialogAddItemComponent } from './components/dialog-add-item/dialog-add-item.component';
 import { DialogModificaListaComponent } from './components/dialog-modifica-lista/dialog-modifica-lista.component';
 import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/dialog-elimita-lista.component';
+import { HomeRicetteComponent } from './components/home-ricette/home-ricette.component';
+import { ListRicetteDetailComponent } from './components/list-ricette-detail/list-ricette-detail.component';
 
 
 @NgModule({
@@ -56,7 +58,9 @@ import { DialogElimitaListaComponent } from './components/dialog-elimina-lista/d
     ElencoListeComponent,
     DialogAddItemComponent,
     DialogModificaListaComponent,
-    DialogElimitaListaComponent
+    DialogElimitaListaComponent,
+    HomeRicetteComponent,
+    ListRicetteDetailComponent
   ],
   entryComponents: [
     DialogSignUpComponent,

@@ -11,12 +11,28 @@ export class ListService {
   returnList(idUser : string, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
     let header = new HttpHeaders();
     this.genericService.callGet(
-      'returnList', 
-      header, 
+      'returnList',
+      header,
       (response)=>{
         if(callback)
         callback(response)
-      }, 
+      },
+      (error)=>{
+        if(errorCallBack)
+        errorCallBack(error)
+      });
+  }
+
+
+  returnListRicette(idUser : string, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+    let header = new HttpHeaders();
+    this.genericService.callGet(
+      'returnListRicette',
+      header,
+      (response)=>{
+        if(callback)
+        callback(response)
+      },
       (error)=>{
         if(errorCallBack)
         errorCallBack(error)
@@ -32,11 +48,20 @@ export class ListService {
       (response)=>{
         if(callback)
         callback(response)
-      }, 
+      },
       (error)=>{
         if(errorCallBack)
         errorCallBack(error)
       });
+  }
+
+  getListById(id: number, lists: List[]){
+  for(let list of lists){
+    if(list.id == id){
+      return list;
+    }
+  }
+
   }
 
 }
