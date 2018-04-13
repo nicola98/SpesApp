@@ -17,7 +17,7 @@ export class ElencoListeComponent implements OnInit {
   constructor(private listService : ListService, private router : Router,  private dialog: MatDialog ) { }
 
   ngOnInit() {
-    this.listService.returnList("1",
+    this.listService.returnList(sessionStorage.getItem("idUser"),
     (response) => {
       console.log("chiamata list fatta");
       this.list=response;

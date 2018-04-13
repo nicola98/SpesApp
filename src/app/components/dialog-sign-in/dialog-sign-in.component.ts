@@ -14,6 +14,7 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 export class DialogSignInComponent implements OnInit {
   
   private actualUser : string;
+  private idActualUser : string;
   private mockUser : string[];
   private actualUserValue : string[];
   private user : User = new User("email", "password");
@@ -32,9 +33,11 @@ export class DialogSignInComponent implements OnInit {
       (response) => {
         console.log("success");
         this.actualUser = response.user;
+        this.idActualUser = response.id;
         this.router.navigate(['/home']);
         sessionStorage.setItem("logged", "true");
         sessionStorage.setItem("user", this.actualUser);
+        sessionStorage.setItem("idUser", this.idActualUser)
         this.checkLoginService.nextLogged(true);
         console.log(this.actualUser);
      }, (error) => {
