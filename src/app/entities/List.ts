@@ -8,7 +8,8 @@ export class List{
     userId: number;
     description:String;
 
-    constructor(id: number, name: string, image: string = null, item: Item[]=null, userId: number, description:String){
+    constructor(id: number = undefined, name: string = null, image: string = null, 
+        item: Item[]=null, userId: number = undefined, description:String = null){
         this.id = id;
         this.name = name;
         this.image = image;
