@@ -12,9 +12,7 @@ import { HeaderService } from '../../services/header.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-private shown = false;
-
+  private nascondi = 0;
   constructor(private dialog: MatDialog, private router : Router, private headerService: HeaderService) { }
 
   signUpopenDialog(){
@@ -32,6 +30,11 @@ private shown = false;
   }
 
   show(){
-    this.shown = true;
+    this.nascondi=this.nascondi + 1;
+    console.log(this.nascondi);
+    if(this.nascondi%2)
+      document.getElementById("menu").style.overflow="visible";
+    else
+      document.getElementById("menu").style.overflow="hidden";
   }
 }
