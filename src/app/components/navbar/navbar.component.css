@@ -72,3 +72,33 @@ li {
 .right {
     float: right;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    right: 3%;
+}
+
+.dropdown-content a {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 0px !important;
+    line-height: 50px;
+}
+
+.dropdown-content a:hover {
+    background-color: #59afe1;
+    color: #fff;
+    padding: 0px !important;
+    border-radius: 0px !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
