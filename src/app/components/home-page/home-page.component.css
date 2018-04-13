@@ -1,9 +1,31 @@
 .contentCenter
 {
-  float: center;
+  width: 60%;
+	height:200px;
+	margin: 0 auto;
 }
+.null {
+	width: 33%;
+	height:200px;
+	float: left;
+	text-align: center;
+  }
+
+.center {
+  width: 34%;
+  height:200px;
+  float:left;
+  text-align: center;
+  }
+
 .arrow {
-  float: right;
+  max-width: 100%;
+	min-width: 5%;
+    height: auto;
+	/*width: 33%;
+	height:20%;	*/
+	float:left;
+	margin-top: 14%;
 }
 
 .add_button {
@@ -15,6 +37,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 90px;
+  margin-bottom: 10%;
+  margin-right: 10%;
   border-radius: 50%;
+  float: right;
 }
