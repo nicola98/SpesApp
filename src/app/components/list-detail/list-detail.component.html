@@ -2,7 +2,7 @@
     <div class="container">
         <div class="fascia-info">
             <div class="num_liste">
-                <p>NumeroListe > <strong> NomeListaCorrente </strong></p>
+                <p>NumeroListe > <strong> {{nomeList}} </strong></p>
             </div>
             <div class="dose">
                 <p>dose</p>
@@ -27,9 +27,10 @@
             <div class="detail_3">
                 <span>{{item.dose}}</span>
             </div>
-            <!-- <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt=""></div>
-            <div *ngIf="!item.gotIt"> <img src="../../../assets/img/wrong.jpg" alt=""></div>
-            <div *ngIf="i!=list.length-1"></div> -->
+            <div class="detail_4">
+                <div *ngIf="item.gotIt"> <img src="../../../assets/img/check.png" alt="" style="width:30px;height:30px"></div>
+                <div *ngIf="!item.gotIt"> <img src="../../../assets/img/wrong.jpg" alt="" style="width:30px;height:30px"></div>
+            </div>
         </div>
     </div>
 </section>

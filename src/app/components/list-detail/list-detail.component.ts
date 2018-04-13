@@ -14,6 +14,7 @@ export class ListDetailComponent implements OnInit {
 
   private list : Item [];
   private idList;
+  private nomeList : string;
 
   constructor(private listItemService : ListItemService, private router: ActivatedRoute, private dialog: MatDialog) {
     this.router.params.subscribe(params=>{
@@ -21,13 +22,15 @@ export class ListDetailComponent implements OnInit {
         this.idList=(params['id']);
     });
     console.log(this.idList);
+    
    }
- 
+
   ngOnInit() {
     this.listItemService.returnListItem(this.idList,
       (response) => {
         console.log("chiamata list fatta");
-        this.list=response;
+        this.list=response.item;
+        this.nomeList = response.name;
         console.log(this.list);
      }, (error) => {
        console.log("error");

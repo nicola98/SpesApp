@@ -18,8 +18,11 @@ export class AppComponent {
 
   ngOnInit(){
     if(sessionStorage.getItem('user') != null){
-      this.isLogged = true;
+      this.isLogged = sessionStorage.getItem("logged")? sessionStorage.getItem("logged")=="true": false;
       console.log(this.isLogged);
-    } 
+    } else{
+      this.isLogged = false;
+
+    }
   }
 }
