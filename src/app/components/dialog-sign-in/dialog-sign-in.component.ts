@@ -1,9 +1,9 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { User } from '../../entities/User';
 import { LoginService } from '../../services/login.service';
 import { CheckLoginService } from '../../services/check-login.service';
 import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material/dialog';
 import { DialogSignUpComponent } from '../dialog-sign-up/dialog-sign-up.component';
 import { MAT_DIALOG_DATA } from '@angular/material';
 @Component({
@@ -12,13 +12,15 @@ import { MAT_DIALOG_DATA } from '@angular/material';
   styleUrls: ['./dialog-sign-in.component.css']
 })
 export class DialogSignInComponent implements OnInit {
-  
+
+
   private actualUser : string;
   private idActualUser : string;
   private mockUser : string[];
   private actualUserValue : string[];
-  private user : User = new User("email", "password");
-  constructor(private router : Router, private checkLoginService : CheckLoginService, private loginService : LoginService,){
+  private user : User = new User();
+  constructor(private router : Router, private checkLoginService : CheckLoginService, private loginService : LoginService,
+      private dialog: MatDialog){
 
   }
 
@@ -43,6 +45,11 @@ export class DialogSignInComponent implements OnInit {
      }, (error) => {
        console.log("error");
     }); 
+  }
+
+  signUpopenDialog(){
+    this.dialog.closeAll();
+    this.dialog.open(DialogSignUpComponent)
   }
 
 }
