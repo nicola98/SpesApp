@@ -2,7 +2,7 @@
     <div class="container">
         <nav>
             <div class="logo">
-                <a href="#"><img src="../../../assets/img/logo.png" alt=""></a>
+                <a routerLink="/home" routerLinkActive="selected"><img src="../../../assets/img/logo.png" alt=""></a>
             </div>
             <ul class="right">
                 <li>
@@ -11,8 +11,12 @@
                 <li>
                     <a routerLink="/ricette" routerLinkActive="selected">ricette</a>
                 </li>
-                <li>
-                    <a routerLink="/user-profile" routerLinkActive="selected">{{actUser}}</a>
+                <li class="dropdown">
+                    <a class="dropbtn" routerLink="/user-profile" routerLinkActive="selected">{{actUser}}</a>
+                    <div class="dropdown-content">
+                        <a routerLink="/user-profile" routerLinkActive="selected">Profilo</a>
+                        <a (click)="logOut()">Log out</a>
+                    </div>
                 </li>
             </ul>
         </nav>

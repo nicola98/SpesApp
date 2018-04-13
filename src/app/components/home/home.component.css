@@ -18,6 +18,9 @@
     border-bottom: 1px solid #E5E5E5;
     padding-top: 70px;
     background-color: #FAFAFA;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 .fascia-info {

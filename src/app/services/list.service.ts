@@ -55,13 +55,47 @@ export class ListService {
       });
   }
 
+  eliminaLista(idList : string, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+    let header = new HttpHeaders({
+      idList
+    });
+    this.genericService.callDelete(
+      'removeListService',
+      header,
+      (response)=>{
+        if(callback)
+        callback(response)
+      }, 
+      (error)=>{
+        if(errorCallBack)
+        errorCallBack(error)
+      });
+  }
+
+  modificaLista(list : List, callback: (response:any)=>void = null, errorCallBack: (error:any)=>void = null){
+    let header = new HttpHeaders();
+    this.genericService.callPut(
+      list,
+      'modificaListService',
+      header,
+      (response)=>{
+        if(callback)
+        callback(response)
+      }, 
+      (error)=>{
+        if(errorCallBack)
+        errorCallBack(error)
+      });
+
+ 
+
+  }
+
   getListById(id: number, lists: List[]){
-  for(let list of lists){
-    if(list.id == id){
-      return list;
+    for(let list of lists){
+      if(list.id == id){
+        return list;
+      }
     }
   }
-
-  }
-
 }
