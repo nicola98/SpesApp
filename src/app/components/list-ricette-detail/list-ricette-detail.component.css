@@ -1,77 +1,77 @@
 .list-btn {
-  float: right;
-  margin-top: -150px;
+    float: right;
+    margin-top: -150px;
 }
 
 .list-btn button {
-  border: 0;
-  width: 70px;
-  height: 70px;
-  background-color: yellow;
-  border-radius: 50%;
-  font-size: 30px;
-  box-shadow: 4px 3px 5px #a7a7a7;
+    border: 0;
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 4px 3px 5px #a7a7a7;
 }
 
 #fascia {
-  border-bottom: 1px solid #E5E5E5;
-  padding-top: 70px;
-  background-color: #FAFAFA;
+    border-bottom: 1px solid #E5E5E5;
+    padding-top: 70px;
+    background-color: #FAFAFA;
 }
 
 .fascia-info {
-  padding: 30px 0;
-  color: #505C7A;
-  font-size: 16px;
+    padding: 30px 0;
+    color: #505C7A;
+    font-size: 16px;
 }
 
 .num_liste {
-  width: 60%;
-  float: left;
+    width: 60%;
+    float: left;
 }
 
 .dose {
-  width: 20%;
-  float: left;
-  text-align: center;
+    width: 20%;
+    float: left;
+    text-align: center;
 }
 
 .quantita {
-  width: 20%;
-  float: left;
-  text-align: center;
+    width: 20%;
+    float: left;
+    text-align: center;
 }
 
 #elenco-liste {
-  min-height: 300px;
+    min-height: 500px;
 }
 
 .elenco-list_img {
-  width: 20%;
-  float: left;
+    width: 20%;
+    float: left;
 }
 
 .elenco-list_img img {
-  width: 60px;
+    width: 60px;
 }
 
 .detail_1 {
-  width: 60%;
-  float: left;
+    width: 60%;
+    float: left;
 }
 
 .detail_2 {
-  width: 20%;
-  float: left;
-  text-align: center;
+    width: 20%;
+    float: left;
+    text-align: center;
 }
 
 .detail_3 {
-  width: 20%;
-  float: left;
-  text-align: center;
+    width: 20%;
+    float: left;
+    text-align: center;
 }
 
 span {
-  line-height: 70px;
+    line-height: 70px;
 }

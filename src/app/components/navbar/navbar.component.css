@@ -115,6 +115,10 @@ li {
     color: #fff !important;
 }
 
+.dropdown-content .selected {
+    border-radius: 0px !important;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
