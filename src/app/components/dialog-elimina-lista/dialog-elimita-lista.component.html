@@ -1,9 +1,14 @@
 <div id="dialogForm">
     <div class="dialog_logo">
-        <h4>Sei sicuro di voler eliminare <b>{{nameList}}</b> </h4>
+        <h4>Eliminare lista</h4>
     </div>
-    <div class="dialog_button">
-        <button mat-dialog-close="yes" (click)="annulla()" class="signup_button">Annulla</button>
-        <button mat-dialog-close="yes" (click)="elimina()" class="signup_button">Conferma</button>
+    <div class="info_elimina">
+        <p>Vuoi eliminare definitivamente <br> la lista <strong>{{nameList}}</strong></p>
+    </div>
+    <div class="dialog_button line-container">
+        <div class="line">
+            <button mat-dialog-close="yes" (click)="annulla()">Annulla</button>
+            <button mat-dialog-close="yes" (click)="elimina()" class="signup_button">Conferma</button>
+        </div>
     </div>
 </div>
